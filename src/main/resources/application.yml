@@ -1,0 +1,13 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: pro
+  messages:
+    basename: i18n/messages
+  main:
+    allow-circular-references: true
+
+comment.avatar: /images/avatar.png
+message.avatar: /images/avatar.png
+
