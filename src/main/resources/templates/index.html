@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 
 </head>
 <body>
@@ -87,13 +88,13 @@
 
         <div class="m-font-size-text" align="center">欢迎各位巨佬来访我的小破站。</div>
         <hr style="width: 40%">
-        <h5 class="m-font-size-text-init-title m-margin-top-large">你说我是错的,那你最好证明你是对的,谢谢。<i
-                class="smile outline icon"></i></h5>
-<!--        <h5 class="m-font-size-text-init-title m-margin-top-large">今天这里看到一个人像极了你 </h5>-->
-<!--        <h5 class="m-font-size-text-init-title">我瞬间特别紧张</h5>-->
-<!--        <h5 class="m-font-size-text-init-title">渴望是你 又害怕是你</h5>-->
-<!--        <h5 class="m-font-size-text-init-title">直到看清楚不是你</h5>-->
-<!--        <h5 class="m-font-size-text-init-title"> 我庆幸不是你 又遗憾不是你</h5>-->
+<!--        <h5 class="m-font-size-text-init-title m-margin-top-large">你说我是错的,那你最好证明你是对的,谢谢。<i-->
+<!--                class="smile outline icon"></i></h5>-->
+        <h5 class="m-font-size-text-init-title m-margin-top-large">我也不知道我是谁 </h5>
+        <h5 class="m-font-size-text-init-title">有时极其黑暗</h5>
+        <h5 class="m-font-size-text-init-title">有时极其善良</h5>
+        <h5 class="m-font-size-text-init-title"> 有时万念俱灰</h5>
+        <h5 class="m-font-size-text-init-title"> 有时情绪高涨</h5>
         <div id="waypoint" class="ui m-margin-top-large" align="center">
             <a href="#" th:href="@{/}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide m-index-btn" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
             <a href="#" th:href="@{/types/-1}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide m-index-btn" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
@@ -281,7 +282,7 @@
         <div style="color: #F08047;margin-top: -18px" class="ui inverted m-text-thin m-text-spaced"><i
                 class="hourglass start icon loading icon"></i> 博客营业中,<span
                 id="nowTime" class="item m-text-thin"></span></div>
-          <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">黔ICP备2021010295号</a>
+          <a rel="nofollow" href="https://beian.miit.gov.cn" target="_blank">黔ICP备2021010295号</a>
     </div>
 
 </footer>
@@ -291,33 +292,25 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
-<script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script>
+<script type="text/javascript" src="../static/lib/dist/canvas_bg.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        swal("版本更新v1.1.0：" +'\n'+
+            "1.管理后台bug修复" +'\n'+
+            "2.修正了ICP备案信息" +'\n'+
+            "3.更换了部分页面的签名"+'\n'+
+            "4.还是决定了关闭2D版娘【懂得懂得】"+'\n'+
+            "5.管理后台前端页面美化【虽然各位看不到.jpg】"+'\n'+
+            "4.其他已经知bug修复"+'\n'+''
+            ,{
+            buttons:'朕已阅',
+            timer:4000
+            //icon:"success"
+        });
+    })
+</script>
 
-    <script>
-    L2Dwidget.init({
-        "model": {
-            jsonPath: "https://unpkg.com/live2d-widget-model-miku@1.0.5/assets/miku.model.json",
-            "scale": 1
-        },
-        "display": {
-            "position": "left",
-            "width": 150,
-            "height": 300,
-            "hOffset": 0,
-            "vOffset": -20
-        },
-        "mobile": {
-            "show": true,
-            "scale": 0.5
-        },
-        "react": {
-            "opacityDefault": 0.3,
-            "opacityOnHover": 0.2
-        }
-    });
-
-    </script>
 
 <script>
     $('#blog-message').load(/*[[@{/footer/blogmessage}]]*/"/footer/blogmessage");
