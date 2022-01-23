@@ -5,26 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tisox不良人-分类</title>
   <link href="../static/images/favicon.ico" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../static/lib/Semantic/semantic.min.css" th:href="@{/lib/Semantic/semantic.min.css}">
   <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+  <link rel="stylesheet" href="../static/css/theme.css" th:href="@{/css/theme.css}">
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+     <link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+
 </head>
 <body>
 
 <!--导航-->
 <nav class="gird-header" th:repleace="header">
   <div class="ui container">
-    <div class="ui inverted secondary stackable menu">
+    <div class="ui inverted secondary stackable menu" id="menu">
       <h2><i class="teal code icon loading icon"></i></h2>
       <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">Tisox</h2>
       <!--<div class="right m-item item m-mobile-hide">-->
-        <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" ><i class="home icon"></i>首页</a>
-        <a href="#" th:href="@{/types/-1}" class="active m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
-        <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
-        <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
-        <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
-        <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>不良簿</a>
-        <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide"><i class="image icon"></i>照片墙</a>
-        <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+        <a href="#" th:href="@{/}" class="m-item item m-mobile-hide shake-vertical" ><i class="home icon"></i>首页</a>
+        <a href="#" th:href="@{/types/-1}" class="active m-item item m-mobile-hide shake-vertical"><i
+                class="clone outline icon"></i>分类</a>
+        <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide shake-vertical"><i class="clock icon"></i>时间轴</a>
+        <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide shake-vertical"><i class="clipboard list icon"></i>卷王录</a>
+        <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide shake-vertical"><i class="book icon"></i>留言板</a>
+        <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide shake-vertical"><i class="pencil alternate icon"></i>不良簿
+        </a>
+
+        <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide shake-vertical"><i class="info icon"></i>关于我</a>
       <!--</div>-->
           <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
@@ -45,9 +51,9 @@
 
 <!--顶部图片-->
 <div class="m-bg-type_outer" style="width: 100%;height: 40%">
-  <img src="../static/images/1.jpeg" th:src="@{/images/1.jpeg}" alt="" class="ui m-bg image"
-       style="width: 100%;height: 100%">
-  <div class="m-bg-class_cover">
+<!--  <img src="" alt="" class="ui m-bg image"-->
+<!--       style="width: 100%;height: 100%">-->
+  <div class="m-bg-class">
     <div class="ui container" style="position: relative ;bottom: -540px;">
       <div class="m-font-size-title m-right-bottom" align="center" style="font-family:'STXingkai'">文章分类</div>
       <div class="m-font-size-text-init-title m-margin-top" align="center">很遗憾啊，那么喜欢连张合照都没有。</div>
@@ -100,7 +106,7 @@
 
           <div class="five wide column">
             <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-              <img src="../static/images/bg1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+              <img src="https://images.waer.ltd/img/1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
             </a>
           </div>
 
@@ -132,7 +138,17 @@
 
 <!--置顶图标-->
 <div id="toolbar" class="m-padded-tb-large m-fixed m-right-bottom" style="display: none">
-  <a href="#" class="ui teal icon button"><i class="chevron up icon"></i> </a>
+    <a href="#" class="ui teal icon button"><i class="chevron up icon"></i> </a>
+
+    <div class="ui  buttons">
+        <button class="ui dark button" id="moon" data-tooltip="暗夜永存"><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;"><i class="moon outline icon"></i>
+        </font></font></button>
+        <div class="or"></div>
+        <button class="ui primary button active" id="sun" data-tooltip="光明不灭"><font style="vertical-align: inherit;"><font
+                style="vertical-align:
+         inherit;"><i class="sun outline icon"></i></font></font></button>
+    </div>
 </div>
 
 
@@ -206,12 +222,13 @@
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-<script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="../static/lib/jquery/jquery-3.1.1.min.js" th:src="@{/lib/jquery/jquery-3.1.1.min.js}"></script>
 
+<script src="../static/lib/Semantic/semantic.min.js" th:src="@{/lib/Semantic/semantic.min.js}"></script><!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
+
+<script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+<script src="../static/lib/jquery/click_show_text.js" th:src="@{/lib/jquery/click_show_text.js}"></script>
+<script src="../static/lib/jquery/snow.js" th:src="@{/lib/jquery/snow.js}"></script>
 
 
 <script>
@@ -254,12 +271,67 @@
             }
             console.log('Scrolled to waypoint!  ' + direction);
         }
-    })
-
-
+    });
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');
     });
+</script>
+<script>
+    $("#moon").click(function() {
+       // alert("moon");
+       $("html").addClass("dark");
+        $("img").addClass("dark");
+        $("footer").addClass("dark");
+        $("body").removeClass("body_light").addClass("body_dark");
+        $("#bg").attr("src",'../static/images/type_t.jpg"');
+    });
+    $("#sun").click(function() {
+       // alert("sun");
+        $("html").removeClass("dark").addClass("sun");
+        $("img").removeClass("dark").addClass("sun");
+        $("footer").removeClass("dark").addClass("sun");
+        $("body").removeClass("body_dark").addClass("body_light");
+    });
+
+</script>
+<script>
+  /*实现哀悼日全站灰色*/
+  function mourn() {
+    $("html").addClass("gray");
+  }
+
+  var dates = new Date();
+  var month = dates.getMonth()+1; //当前系统时间的月份值
+  var day = dates.getDate(); //当前系统时间的月份中的日
+  $(document).ready(function() {
+    console.log("今天是："+month);
+    console.log("今天是:"+day);
+    if(month===4 && day===4){
+      mourn();
+      swal("全站哀悼模式已启用：" +'\n'+
+              "【别时容易见时难】" +'\n'+
+              "【流水落花春去也】" +'\n'+
+              "【天上人间】"+'\n'+
+              "今天是4月4日清明节！"+'\n'
+              ,{
+                buttons:'关闭',
+                timer:180000
+                //icon:"success"
+              });
+    }
+    if(month ===12 && day === 13){
+      mourn();
+      swal("全站哀悼模式已启用：" +'\n'+
+              "【牢记历史】" +'\n'+
+              "【勿忘国耻】" +'\n'+
+              "今天是12月13,南京大屠杀纪念日！"+'\n'
+              ,{
+                buttons:'关闭',
+                timer:180000
+                //icon:"success"
+              });
+    }
+  });
 
 </script>
 </body>

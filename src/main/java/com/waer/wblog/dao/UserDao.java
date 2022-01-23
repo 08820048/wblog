@@ -15,4 +15,18 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserDao {
     User findByUsernameAndPassword(@Param("username") String username, @Param("password") String password);
+
+    User selectById(int id);
+
+    User selectByName(String nickname);
+
+    User selectByEmail(String email);
+
+    int insertUser(User user);
+
+    int updateType(int id);
+
+    int updateHeader(int id,String headerUrl);
+
+    int updatePassword(String email,String password);
 }

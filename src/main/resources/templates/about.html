@@ -4,27 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tisox不良人-关于我</title>
+<!--    <link rel="stylesheet" href="../static/lib/music/css/zplayer.min.css" th:href="@{/lib/music/css/zplayer.min.css}" />-->
     <link href="../static/images/favicon.ico" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+     <link rel="stylesheet" href="../static/lib/Semantic/semantic.min.css" th:href="@{/lib/Semantic/semantic.min.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="../static/css/theme.css" th:href="@{/css/theme.css}">
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
 </head>
 <body>
 
 <!--导航-->
 <nav class="gird-header" th:repleace="header">
     <div class="ui container">
-        <div class="ui inverted secondary stackable menu">
+        <div class="ui inverted secondary stackable menu" id="menu">
             <h2><i class="teal code icon loading icon"></i></h2>
             <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">Tisox</h2>
             <!--<div class="right m-item item m-mobile-hide">-->
-                <a href="#" th:href="@{/}" class="m-item item m-mobile-hide "><i class="home icon"></i>首页</a>
-                <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
-                <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
-                <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
-                <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
-                <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>不良簿</a>
-                <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide"><i class="image icon"></i>照片墙</a>
-                <a href="#" th:href="@{/about}" class="active m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <a href="#" th:href="@{/}" class="m-item item m-mobile-hide shake-vertical" ><i class="home icon"></i>首页</a>
+            <a href="#" th:href="@{/types/-1}" class=" m-item item m-mobile-hide shake-vertical"><i
+                    class="clone outline icon"></i>分类</a>
+            <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide shake-vertical"><i class="clock icon"></i>时间轴</a>
+            <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide shake-vertical"><i class="clipboard list icon"></i>卷王录</a>
+            <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide shake-vertical"><i class="book icon"></i>留言板</a>
+            <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide shake-vertical"><i class="pencil alternate icon"></i>不良簿
+            </a>
+
+            <a href="#" th:href="@{/about}" class=" active m-item item m-mobile-hide shake-vertical"><i
+                    class="info icon"></i>关于我</a>
             <!--</div>-->
             <div class="right m-item item m-mobile-hide">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
@@ -45,9 +52,15 @@
 
 <!--顶部背景图片-->
 <div class="m-bg-type_outer" style="width: 100%;height: 40%">
-    <img src="../static/images/15.jpg" th:src="@{/images/15.jpg}" alt="" class="ui m-bg image"
+
+    <img src="https://images.waer.ltd/img/coder.png"  alt="" class="ui m-bg image"
          style="width: 100%;height: 100%">
-    <div class="m-bg-class_cover">
+<!--    <div class="ui m-margin- m-opacity" align="center"  style="z-index: 10">-->
+<!--        <div class="ui container box-shadow-max" >-->
+<!--            <div id="player2" ></div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div class="m-bg-class">
         <div class="ui container" style="position: relative ;bottom: -540px;">
             <div class="m-font-size-title" align="center" style="font-family:'STXingkai'">关于我</div>
             <div class="m-font-size-text-init-title m-margin-top"
@@ -55,34 +68,20 @@
             </div>
         </div>
     </div>
+
 </div>
 
 <!--个人资料描述-->
 <div class="ui container m-opacity box-shadow-max">
     <div class="ui segment m-margin-" align="center">
         <div class="m-margin-top-large" align="center">
-            <img class="ui circular image" align="center" src="../static/images/my1.jpg" th:src="@{/images/my1.jpg}"
+            <img class="ui circular image shake-crazy" align="center" src="../static/images/my1.jpg"
+                 th:src="@{/images/my1.jpg}"
                  style="width: 150px;height: 150px;">
         </div>
     <div class="m-margin-top-small" style="font-size: x-large;font-family: STSong" align="center">Tisox</div>
-        <sub style="color: #00c4ff">《Something Just Like This》</sub>
-<!--    <div class="m-margin-top" align="center">-->
-<!--        <a href="#" class="ui tencent circular icon button"><i class="user icon"></i></a>-->
-<!--        <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>-->
-<!--        <a href="#" class="ui qq circular icon button" data-content="316392836" data-position="bottom center"><i class="qq icon"></i></a>-->
-<!--        <a href="https://github.com/WAerLR/" target="_blank" class="ui github circular icon button" data-content="点击跳转GitHub" data-position="bottom center"><i class="github icon"></i></a>-->
-<!--        <a href="https://WAer.blog.csdn.net/" target="_blank" class="ui csdn circular icon button" data-content="点击跳转CSDN" data-position="bottom center"><i class="copyright outline icon"></i></a>-->
-<!--        <a href="#" class="ui email circular icon button" data-content="WAerlr@hotmail.com" data-position="bottom center"><i class="envelope  icon"></i></a>-->
-<!--    </div>-->
+        <h3 style="color: #00c4ff">邓宁-克鲁格效应</h3>
 
-    <div class="ui tencent-qr flowing popup transition hidden">
-        <img src="../static/images/WAer.jpg" th:src="@{/images/WAer.jpg}" alt="" class="ui rounded image" style="width: 110px">
-        <div align="center">公众号</div>
-    </div>
-    <div class="ui wechat-qr flowing popup transition hidden">
-        <img src="../static/images/WAerWechat.jpg" th:src="@{/images/WAerWechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
-        <div align="center">微信</div>
-    </div>
     <div class="ui qq-qr flowing popup transition hidden">
         <img src="../static/images/qq.jpg" th:src="@{/images/qq.jpg}" alt="" class="ui rounded image" style="width: 110px">
         <div align="center">QQ</div>
@@ -91,22 +90,24 @@
         <br>
         <div>
 
-            <p>我曾饱读古书</p>
-            <p>还有传说与神话</p>
-            <p>如阿喀琉斯和他的战利品</p>
-            <p>赫拉克勒斯和他的天赋神力</p>
-            <p>蜘蛛侠的掌控力</p>
-            <p>蝙蝠侠的铁拳</p>
-            <p>显而易见我未能名列其中</p>
-            <p>但她问你想去何方</p>
-            <p>你甘愿冒多大的险？</p>
-            <p>我并不渴望</p>
-            <p>超人般的天赋异禀</p>
-            <p>那种超级英雄</p>
-            <p>那些童话里的天赐神力</p>
-            <p>我只希望能有些依靠</p>
-            <p>吻到我爱的人就好</p>
-            <p>我想要的不过是这些！</p>
+            <h4 style="font-size: large;color: #0a001f;box-shadow: #0e8c8c">
+                能力欠缺的人在自己欠考虑的决定的基础上得出错误结论，但是无法正确认识到自身的不足，辨别错误行为。<br>
+                这些能力欠缺者们沉浸在自我营造的虚幻的优势之中，常常高估自己的能力水平，却无法客观评价他人的能力。</h4>
+<!--            <p>还有传说与神话</p>-->
+<!--            <p>如阿喀琉斯和他的战利品</p>-->
+<!--            <p>赫拉克勒斯和他的天赋神力</p>-->
+<!--            <p>蜘蛛侠的掌控力</p>-->
+<!--            <p>蝙蝠侠的铁拳</p>-->
+<!--            <p>显而易见我未能名列其中</p>-->
+<!--            <p>但她问你想去何方</p>-->
+<!--            <p>你甘愿冒多大的险？</p>-->
+<!--            <p>我并不渴望</p>-->
+<!--            <p>超人般的天赋异禀</p>-->
+<!--            <p>那种超级英雄</p>-->
+<!--            <p>那些童话里的天赐神力</p>-->
+<!--            <p>我只希望能有些依靠</p>-->
+<!--            <p>吻到我爱的人就好</p>-->
+<!--            <p>我想要的不过是这些！</p>-->
         </div>
         <hr class="m-margin-top-large">
         <br>
@@ -134,7 +135,19 @@
 
   <br>
   <br>
+<!--置顶图标-->
+<div id="toolbar" class="m-padded-tb-large m-fixed m-right-bottom">
 
+    <div class="ui  buttons">
+        <button class="ui dark button"  data-tooltip="暗夜永存"id="moon"><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;"><i class="moon outline icon"></i>
+        </font></font></button>
+        <div class="or"></div>
+        <button class="ui green button " data-tooltip="光明不灭" id="sun"><font style="vertical-align: inherit;"><font
+                style="vertical-align:
+         inherit;"><i class="sun outline icon"></i></font></font></button>
+    </div>
+</div>
   <!--底部栏-->
 <footer class="ui inverted vertical segment m-padded-tb-massive m-opacity" th:replace="index::footer">
     <!--容器-->
@@ -202,12 +215,31 @@
 
 </footer>
 
+<!--<script type="text/javascript" src="../static/lib/music/js/zplayer.min.js" th:src="@{/lib/music/js/zplayer.min.js}"></script>-->
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
+<script src="../static/lib/jquery/jquery-3.1.1.min.js" th:src="@{/lib/jquery/jquery-3.1.1.min.js}"></script>
 
+<script src="../static/lib/Semantic/semantic.min.js" th:src="@{/lib/Semantic/semantic.min.js}"></script><!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
+<script src="../static/lib/jquery/click_show_text.js" th:src="@{/lib/jquery/click_show_text.js}"></script>
+<script src="../static/lib/jquery/snow.js" th:src="@{/lib/jquery/snow.js}"></script>
+<script>
+    $("#moon").click(function() {
+       // alert("moon");
+       $("html").addClass("dark");
+        $("img").addClass("dark");
+        $("footer").addClass("dark");
+        $("body").removeClass("body_light").addClass("body_dark");
+        $("#bg").attr("src",'../static/images/dark_top.jpg"')
+    });
+    $("#sun").click(function() {
+       // alert("sun");
+        $("html").removeClass("dark").addClass("sun");
+        $("img").removeClass("dark").addClass("sun");
+        $("footer").removeClass("dark").addClass("sun");
+        $("body").removeClass("body_dark").addClass("body_light");
+    });
+
+</script>
 
   <script>
       // $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
@@ -267,12 +299,47 @@
 
       // 显示github
       $('.github').popup();
-
-
-
-
-
-
   </script>
+<script>
+    /*实现哀悼日全站灰色*/
+    function mourn() {
+        $("html").addClass("gray");
+    }
+
+    var dates = new Date();
+    var month = dates.getMonth()+1; //当前系统时间的月份值
+    var day = dates.getDate(); //当前系统时间的月份中的日
+    $(document).ready(function() {
+        console.log("今天是："+month);
+        console.log("今天是:"+day);
+        if(month===4 && day===4){
+            mourn();
+            swal("全站哀悼模式已启用：" +'\n'+
+                "【别时容易见时难】" +'\n'+
+                "【流水落花春去也】" +'\n'+
+                "【天上人间】"+'\n'+
+                "今天是4月4日清明节！"+'\n'
+                ,{
+                    buttons:'关闭',
+                    timer:180000
+                    //icon:"success"
+                });
+        }
+        if(month ===12 && day === 13){
+            mourn();
+            swal("全站哀悼模式已启用：" +'\n'+
+                "【牢记历史】" +'\n'+
+                "【勿忘国耻】" +'\n'+
+                "今天是12月13,南京大屠杀纪念日！"+'\n'
+                ,{
+                    buttons:'关闭',
+                    timer:180000
+                    //icon:"success"
+                });
+        }
+    });
+
+</script>
+
 </body>
 </html>

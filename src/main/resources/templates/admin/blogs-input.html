@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>博文发布</title>
   <link href="../../static/images/my1.jpg" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" href="../../static/lib/Semantic/semantic.min.css" th:href="@{/lib/Semantic/semantic.min.css}">
   <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
   <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+  <link rel="stylesheet" href="../../static/css/theme.css" th:href="@{/css/theme.css}">
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
 </head>
 <body>
 <nav class="ui inverted gird-header"  >
@@ -101,7 +104,7 @@
           </div>
         </div>
 
-        <div class="required field">
+        <div class="required field line-numbers match-braces rainbow-braces">
           <div class="" id="md-content" style="z-index: 1 !important;">
             <textarea placeholder="博客内容" name="content" style="display: none" th:text="*{content}"></textarea>
           </div>
@@ -178,6 +181,19 @@
 
   <br>
   <br>
+<!--置顶图标-->
+<div id="toolbar" class="m-padded-tb-large m-fixed m-right-bottom">
+
+  <div class="ui  buttons">
+    <button class="ui dark button" id="moon" data-tooltip="暗夜永存"><font style="vertical-align: inherit;"><font
+            style="vertical-align: inherit;"><i class="moon outline icon"></i>
+    </font></font></button>
+    <div class="or"></div>
+    <button class="ui green button " id="sun" data-tooltip="光明不灭"><font style="vertical-align: inherit;"><font
+            style="vertical-align:
+         inherit;"><i class="sun outline icon"></i></font></font></button>
+  </div>
+</div>
   <!--底部栏-->
   <footer class="ui inverted vertical segment m-padded-tb-massive m-opacity" th:replace="index::footer">
     <!--容器-->
@@ -244,17 +260,10 @@
     </div>
 
   </footer>
+<script src="../../static/lib/jquery/jquery-3.1.1.min.js" th:src="@{/lib/jquery/jquery-3.1.1.min.js}"></script>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-  <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
-
-
-  <script>
-
-      // $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
-
+<script src="../../static/lib/Semantic/semantic.min.js" th:src="@{/lib/Semantic/semantic.min.js}"></script><script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+<script>
 
       $('#blog-message').load(/*[[@{/footer/blogmessage}]]*/"/footer/blogmessage");
 
@@ -355,5 +364,62 @@
     });
 
   </script>
+<script>
+  $("#moon").click(function() {
+    // alert("moon");
+    $("html").addClass("dark");
+    $("img").addClass("dark");
+    $("footer").addClass("dark");
+    $("body").removeClass("body_light").addClass("body_dark");
+    $("#bg").attr("src",'../static/images/dark_top.jpg"')
+  });
+  $("#sun").click(function() {
+    // alert("sun");
+    $("html").removeClass("dark").addClass("sun");
+    $("img").removeClass("dark").addClass("sun");
+    $("footer").removeClass("dark").addClass("sun");
+    $("body").removeClass("body_dark").addClass("body_light");
+  });
+</script>
+<script>
+  /*实现哀悼日全站灰色*/
+  function mourn() {
+    $("html").addClass("gray");
+  }
+
+  var dates = new Date();
+  var month = dates.getMonth()+1; //当前系统时间的月份值
+  var day = dates.getDate(); //当前系统时间的月份中的日
+  $(document).ready(function() {
+    console.log("今天是："+month);
+    console.log("今天是:"+day);
+    if(month===4 && day===4){
+      mourn();
+      swal("全站哀悼模式已启用：" +'\n'+
+              "【别时容易见时难】" +'\n'+
+              "【流水落花春去也】" +'\n'+
+              "【天上人间】"+'\n'+
+              "今天是4月4日清明节！"+'\n'
+              ,{
+                buttons:'关闭',
+                timer:180000
+                //icon:"success"
+              });
+    }
+    if(month ===12 && day === 13){
+      mourn();
+      swal("全站哀悼模式已启用：" +'\n'+
+              "【牢记历史】" +'\n'+
+              "【勿忘国耻】" +'\n'+
+              "今天是12月13,南京大屠杀纪念日！"+'\n'
+              ,{
+                buttons:'关闭',
+                timer:180000
+                //icon:"success"
+              });
+    }
+  });
+
+</script>
 </body>
 </html>

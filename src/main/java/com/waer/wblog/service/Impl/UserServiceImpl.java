@@ -4,16 +4,14 @@ import com.waer.wblog.dao.UserDao;
 import com.waer.wblog.entity.User;
 import com.waer.wblog.service.UserService;
 import com.waer.wblog.util.MD5Utils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.thymeleaf.context.Context;
 
-/**
- * @Description: 用户业务层接口实现类
- * @Author: ONESTAR
- * @Date: Created in 11:04 2020/3/26
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+import java.util.*;
+
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -25,4 +23,8 @@ public class UserServiceImpl implements UserService {
         User user = userDao.findByUsernameAndPassword(username, MD5Utils.code(password));
         return user;
     }
+
+
+
+
 }

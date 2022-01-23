@@ -7,6 +7,12 @@ spring:
     basename: i18n/messages
   main:
     allow-circular-references: true
+  mail:
+    host: smtp.sina.com
+    #port: 465
+    username: workcoder@sina.com
+    password: d6dd27b52588150a
+    default-encoding: utf-8
 
 comment.avatar: /images/avatar.png
 message.avatar: /images/avatar.png

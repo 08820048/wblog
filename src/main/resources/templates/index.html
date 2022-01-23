@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" id="html">
 <head >
     <meta name="baidu-site-verification" content="U67Xy1Qfos" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tisox不良人</title>
-    <link href="../static/images/favicon.ico" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
-    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"/>
 
-</head>
+    <link rel="stylesheet" href="../static/lib/Semantic/semantic.min.css" th:href="@{/lib/Semantic/semantic.min.css}">
+    <link href="../static/images/favicon.ico" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" href="../static/css/theme.css" th:href="@{/css/theme.css}">
+    <link rel="stylesheet" href="../static/css/bg.css" th:href="@{/css/bg.css}">
+
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+
 <body>
 
 <!--导航-->
 <nav id="nav" class="gird-header" style="display: none">
     <div class="ui container">
-        <div class="ui inverted secondary stackable menu">
+        <div class="ui inverted secondary  menu" id="menu">
             <h2><i class="teal code icon loading icon"></i></h2>
             <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">Tisox</h2>
             <!--<div class="right m-item item m-mobile-hide">-->
             <a href="#" th:href="@{/}" class="active m-item item"><i class="home icon"></i>首页</a>
-                <a href="#" th:href="@{/types/-1}" class="m-item item"><i class="clone outline icon"></i>分类</a>
-                <a href="#" th:href="@{/archives}" class="m-item item"><i class="clock icon"></i>时间轴</a>
-                <a href="#" th:href="@{/music}" class="m-item item"><i class="music icon"></i>音乐盒</a>
-                <a href="#" th:href="@{/message}" class="m-item item"><i class="book icon"></i>留言板</a>
-                <a href="#" th:href="@{/friends}" class="m-item item"><i class="pencil alternate icon"></i>不良簿</a>
-                <a href="#" th:href="@{/picture}" class="olive m-item item"><i class="image icon"></i>照片墙</a>
-                <a href="#" th:href="@{/about}" class="m-item item"><i class="info icon"></i>关于我</a>
+                <a href="#" th:href="@{/types/-1}" class="m-item item shake-vertical" style="--x:0"><i
+                        class="clone outline icon"></i>分类</a>
+                <a href="#" th:href="@{/archives}" class="m-item item shake-vertical" style="--x:0"><i class="clock icon"></i>时间轴</a>
+                <a href="#" th:href="@{/music}" class="m-item item shake-vertical" style="--x:0"><i class="clipboard list icon"></i>卷王录</a>
+                <a href="#" th:href="@{/message}" class="m-item item shake-vertical" style="--x:0"><i class="book icon"></i>留言板</a>
+                <a href="#" th:href="@{/friends}" class="m-item item shake-vertical" style="--x:0"><i
+                        class="pencil alternate icon"></i>不良簿</a>
+
+                <a href="#" th:href="@{/about}" class="m-item item shake-vertical" style="--x:0"><i class="info icon"></i>关于我</a>
             <!--</div>-->
             <div class="right m-item item">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
@@ -49,15 +55,16 @@
 
 
 <!--顶部图片-->
-<div class="m-bg-class_outer" style="width: 100%;height: 750px">
-    <img src="../static/images/bg1.jpg" th:src="@{/images/bg1.jpg}" alt="" class="ui m-bg image"
-         style="width: 100%;height: 100%">
-    <div class="m-bg-class_cover" align="center">
+<div class="m-bg-class_outer bg" style="width: 100%;height: 750px">
+
+<!--    <img src="../static/images/index_t.jpg" id="bg" th:src="@{/images/index_t.jpg}" alt="" class="ui m-bg image"-->
+<!--         style="width: 100%;height: 100%">-->
+    <div class="m-bg-class" align="center">
         <div class="m-margin-top-maxx" align="center">
-            <img class="ui circular image" align="center" src="../static/images/1.jpeg"
+            <img class="ui circular image shake-crazy" align="center" src="../static/images/my1.jpg"
                  th:src="@{/images/my1.jpg}" style="width: 150px;height: 150px;">
         </div>
-        <div class="m-font-size-title-mediul" align="center">Tisox不良人</div>
+        <div class="m-font-size-title-mediul shake-horizontal" align="center" style="color: black">Tisox不良人</div>
 
         <div class="" align="center">
             <a href="#" class="ui tencent circular icon button"><i class="user icon"></i></a>
@@ -86,24 +93,28 @@
             <div align="center">QQ</div>
         </div>
 
-        <div class="m-font-size-text" align="center">欢迎各位巨佬来访我的小破站。</div>
+        <div class="m-font-size-text dark" align="center">惟有热爱，可抵岁月漫长!</div>
         <hr style="width: 40%">
 <!--        <h5 class="m-font-size-text-init-title m-margin-top-large">你说我是错的,那你最好证明你是对的,谢谢。<i-->
 <!--                class="smile outline icon"></i></h5>-->
-        <h5 class="m-font-size-text-init-title m-margin-top-large">我也不知道我是谁 </h5>
-        <h5 class="m-font-size-text-init-title">有时极其黑暗</h5>
-        <h5 class="m-font-size-text-init-title">有时极其善良</h5>
-        <h5 class="m-font-size-text-init-title"> 有时万念俱灰</h5>
-        <h5 class="m-font-size-text-init-title"> 有时情绪高涨</h5>
-        <div id="waypoint" class="ui m-margin-top-large" align="center">
-            <a href="#" th:href="@{/}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide m-index-btn" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
-            <a href="#" th:href="@{/types/-1}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide m-index-btn" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
-            <a href="#" th:href="@{/archives}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clock icon"></i>时间轴</a>
-            <a href="#" th:href="@{/music}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="music icon"></i>音乐盒</a>
-            <a href="#" th:href="@{/message}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="book icon"></i>留言板</a>
-            <a href="#" th:href="@{/friends}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide" th:classappend="${n==7} ? 'active'"><i class="pencil alternate icon"></i>不良簿</a>
-            <a href="#" th:href="@{/picture}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide" th:classappend="${n==8} ? 'active'"><i class="image icon"></i>照片墙</a>
-            <a href="#" th:href="@{/about}" class="ui circular icon button m-opacity-small m-item item m-mobile-hide" th:classappend="${n==9} ? 'active'"><i class="info icon"></i>关于我</a>
+        <h5  class="m-font-size-text-init-title m-margin-top-large h5txt">如果你没有能力，你就不会知道自己没有能力。</h5>
+        <h5 class="m-font-size-text-init-title h5txt">即庸人容易因欠缺自知之明而自我膨胀。</h5>
+        <div id="waypoint" class="ui m-margin-top-large" align="center" >
+            <a href="#" th:href="@{/}"
+               class="shake-vertical ui circular icon button  m-item item m-mobile-hide m-index-btn"
+               th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+            <a href="#" th:href="@{/types/-1}"
+               class="shake-vertical ui circular icon button  m-item item m-mobile-hide m-index-btn" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
+            <a href="#" th:href="@{/archives}"
+               class="shake-vertical ui circular icon button  m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clock icon"></i>时间轴</a>
+            <a href="#" th:href="@{/music}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
+               th:classappend="${n==5} ? 'active'"><i class="clipboard list icon"></i>卷王录</a>
+            <a href="#" th:href="@{/message}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
+               th:classappend="${n==6} ? 'active'"><i class="book icon"></i>留言板</a>
+            <a href="#" th:href="@{/friends}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
+               th:classappend="${n==7} ? 'active'"><i class="shake-vertical pencil alternate icon"></i>不良簿</a>
+            <a href="#" th:href="@{/about}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
+               th:classappend="${n==9} ? 'active'"><i class="info icon"></i>关于我</a>
         </div>
         <div class="hiddenDiv"></div>
     </div>
@@ -113,16 +124,17 @@
 
 
 <!--最新推荐-->
-<div class="ui m-padded-tb-large">
+<div class="ui m-padded-tb-large" >
     <div class="ui m-container-small m-opacity">
         <div class="ui secondary segment " align="center">
             <i class="bookmark icon"></i>最新推荐
         </div>
     </div>
-    <div class="ui stackable m-container-mini m-opacity grid">
-        <div class="m-margin-tb-tiny four wide column" th:each="blog : ${recommendedBlogs}">
+    <div class="ui stackable m-container-mini m-opacity grid" >
+        <div class="m-margin-tb-tiny four wide column upbtn " th:each="blog : ${recommendedBlogs}"
+             id="recommend" >
             <a href="#" class="class_outer" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                <img src="../static/images/bg1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+                <img src="https://images.waer.ltd/img/1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
                 <span class="class_cover">
                      <h4 class="m-font-size-blog-text m-margin-tb-tiny" th:text="${blog.title}">大圣，此去欲何?</h4>
                   </span>
@@ -144,7 +156,8 @@
                     </div>
                 </div>
                 <!--博文列表-->
-                <div class="ui padded segment m-padded-tb-large m-opacity" th:each="blog : ${pageInfo.list}">
+                <div class="ui padded segment m-padded-tb-large m-opacity  upbtn " id="list"
+                     th:each="blog : ${pageInfo.list}">
                     <div class="ui large aligned mobile reversed stackable grid">
                         <!--博文信息-->
                         <div class="eleven wide column ">
@@ -177,7 +190,7 @@
                         <!--博文图片-->
                         <div class="five wide column">
                             <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
-                                <img src="../static/images/bg1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
+                                <img src="https://images.waer.ltd/img/1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
                             </a>
                         </div>
                     </div>
@@ -186,7 +199,8 @@
             <!--分页-->
             <div class="ui bottom attached segment m-opacity stackable grid">
                 <div class="three wide column" align="center">
-                    <a class="item" th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}" th:unless="${pageInfo.isFirstPage}">上一页</a>
+                    <a class="item page" th:href="@{/(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}"
+                       th:unless="${pageInfo.isFirstPage}">上一页</a>
                 </div>
 
                 <div class="ten wide column" align="center">
@@ -194,7 +208,8 @@
                 </div>
 
                 <div class="three wide column" align="center">
-                    <a class="item" th:href="@{/(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" th:unless="${pageInfo.isLastPage}">下一页</a>
+                    <a class="item page"
+                       th:href="@{/(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" th:unless="${pageInfo.isLastPage}">下一页</a>
                 </div>
             </div>
 
@@ -207,6 +222,17 @@
 <!--置顶图标-->
 <div id="toolbar" class="m-padded-tb-large m-fixed m-right-bottom" style="display: none">
     <a href="#" class="ui teal icon button"><i class="chevron up icon"></i> </a>
+
+    <div class="ui  buttons">
+        <button class="ui dark button" data-tooltip="暗夜永存" id="moon"><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;"><i class="moon outline icon"></i>
+        </font></font></button>
+        <div class="or"></div>
+        <button class="ui primary button active" data-tooltip="光明不灭" id="sun"><font
+                style="vertical-align: inherit;"><font
+                style="vertical-align:
+         inherit;"><i class="sun outline icon"></i></font></font></button>
+    </div>
 </div>
 
 
@@ -215,7 +241,7 @@
 <br>
 <br>
 <!--底部栏-->
-<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity" >
+<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity-tiny " id="footer" >
     <!--容器-->
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
@@ -247,8 +273,9 @@
                 <div class="ui inverted link list">
                     <div class="item">
                         <!--微信二维码-->
-                        <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced " >问题交流（QQ群）</div>
-                        <img src="../static/images/qqq.jpg" th:src="@{/images/qqq.jpg}"
+                        <div style="font-size: large;font-weight: bold"
+                             class="ui inverted m-text-thin m-text-spaced " >个人飞书</div>
+                        <img src="../static/images/fs.jpg" th:src="@{/images/fs.jpg}"
                              class="ui m-margin-top rounded image" alt="" style="width: 110px">
                     </div>
                 </div>
@@ -281,31 +308,37 @@
         <div class="ui inverted section divider"></div>
         <div style="color: #F08047;margin-top: -18px" class="ui inverted m-text-thin m-text-spaced"><i
                 class="hourglass start icon loading icon"></i> 博客营业中,<span
-                id="nowTime" class="item m-text-thin"></span></div>
-          <a rel="nofollow" href="https://beian.miit.gov.cn" target="_blank">黔ICP备2021010295号</a>
+                id="nowTime" class="item m-text-thin"></span></div>&nbsp;
+          <a rel="nofollow" href="https://beian.miit.gov.cn" target="_blank">黔ICP备2021010295号-1</a>&nbsp;&nbsp;&nbsp;
+        <a rel="nofollow" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52052402000190" target="_blank"><img style="vertical-align: middle;" src="../static/images/cng.png"
+                                                                                th:src=@{/images/cng.png} alt="">
+            贵公安备52052402000190号</a>
     </div>
-
+    </div>
 </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
+<script src="../static/lib/jquery/jquery-3.1.1.min.js" th:src="@{/lib/jquery/jquery-3.1.1.min.js}"></script>
+<script src="../static/lib/Semantic/semantic.min.js" th:src="@{/lib/Semantic/semantic.min.js}"></script>
 <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
-<script type="text/javascript" src="../static/lib/dist/canvas_bg.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../static/lib/jquery/click_show_text.js" th:src="@{/lib/jquery/click_show_text.js}"></script>
+<script src="../static/lib/jquery/snow.js" th:src="@{/lib/jquery/snow.js}"></script>
+
 <script type="text/javascript">
     $(document).ready(function() {
-        swal("版本更新v1.1.0：" +'\n'+
-            "1.管理后台bug修复" +'\n'+
-            "2.修正了ICP备案信息" +'\n'+
-            "3.更换了部分页面的签名"+'\n'+
-            "4.还是决定了关闭2D版娘【懂得懂得】"+'\n'+
-            "5.管理后台前端页面美化【虽然各位看不到.jpg】"+'\n'+
-            "4.其他已经知bug修复"+'\n'+''
+        swal("【版本更新啦^-^，更新内容如下】：" +'\n'+
+            "1.前台页面大幅调整" +'\n'+
+            "2.[音乐盒][照片墙]被砍掉" +'\n'+
+            "3.公安备案已完成"+'\n'+
+            "4.新增：暗夜/白天模式切换【在右下角哦】"+'\n'+
+            "5.新增：特殊节日全站自动进入哀悼模式"+'\n'+
+            "6.美化了文章中的代码显示"+'\n'+
+            "7.添加了一些动画且砍掉了一些废材"+'\n'+
+            "8.其他bug修复"+'\n'+''
             ,{
             buttons:'朕已阅',
-            timer:4000
+            timer:10000
             //icon:"success"
         });
     })
@@ -410,5 +443,64 @@
         s.parentNode.insertBefore(hm, s);
     })();
 </script>
+
+<script>
+    $("#moon").click(function() {
+       // alert("moon");
+       $("html").addClass("dark");
+        $("img").addClass("dark");
+        $("footer").addClass("dark");
+        $("body").removeClass("body_light").addClass("body_dark");
+        // $("#bg").attr("src",'../static/images/index_t.jpg');
+        // $("#bg").attr("th:src",'@{/images/index_t.jpg}')
+    });
+    $("#sun").click(function() {
+       // alert("sun");
+        $("html").removeClass("dark").addClass("sun");
+        $("img").removeClass("dark").addClass("sun");
+        $("footer").removeClass("dark").addClass("sun");
+        $("body").removeClass("body_dark").addClass("body_light");
+    });
+</script>
+<script>
+    /*实现哀悼日全站灰色*/
+    function mourn() {
+        $("html").addClass("gray");
+    }
+
+var dates = new Date();
+var month = dates.getMonth()+1; //当前系统时间的月份值
+var day = dates.getDate(); //当前系统时间的月份中的日
+    $(document).ready(function() {
+        console.log("今天是："+month);
+        console.log("今天是:"+day);
+        if(month===4 && day===4){
+            mourn();
+            swal("全站哀悼模式已启用：" +'\n'+
+                "【别时容易见时难】" +'\n'+
+                "【流水落花春去也】" +'\n'+
+                "【天上人间】"+'\n'+
+                "今天是4月4日清明节！"+'\n'
+                ,{
+                buttons:'关闭',
+                timer:50000
+                //icon:"success"
+            });
+        }
+        if(month ===12 && day === 13){
+            mourn();
+            swal("全站哀悼模式已启用：" +'\n'+
+                "【牢记历史】" +'\n'+
+                "【勿忘国耻】" +'\n'+
+                "今天是12月13,南京大屠杀纪念日！"+'\n'
+                ,{
+                    buttons:'关闭',
+                    timer:5000
+                    //icon:"success"
+                });
+        }
+    });
+</script>
+
 </body>
 </html>

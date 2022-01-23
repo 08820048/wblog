@@ -15,13 +15,29 @@ import java.util.List;
  */
 public interface MessageService {
 
-    //查询留言列表
+    /**
+     * 查询留言列表
+     * @return list
+     */
     List<Message> listMessage();
 
-    //保存留言
+    /**
+     * 保存留言
+     * @param message msg
+     * @return int
+     */
     int saveMessage(Message message);
 
-    //删除留言
+    /**
+     * 删除留言
+     * @param id
+     */
     void deleteMessage(Long id);
+
+    /**
+     * 查询子留言
+     * @param message
+     */
+    void findParentMessage(Message message);
 
 }
