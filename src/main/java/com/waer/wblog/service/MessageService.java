@@ -34,10 +34,5 @@ public interface MessageService {
      */
     void deleteMessage(Long id);
 
-    /**
-     * 查询子留言
-     * @param message
-     */
-    void findParentMessage(Message message);
 
 }

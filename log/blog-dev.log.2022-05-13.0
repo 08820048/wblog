@@ -1,0 +1,160 @@
+2022-05-13 21:22:26.458  INFO 19072 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 19072 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:22:26.466  INFO 19072 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:22:26.520  INFO 19072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:22:26.521  INFO 19072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:22:28.290  INFO 19072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:22:28.302  INFO 19072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:22:28.302  INFO 19072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:22:28.424  INFO 19072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:22:28.425  INFO 19072 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1903 ms
+2022-05-13 21:22:29.444  INFO 19072 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:22:30.032  INFO 19072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:22:30.081  INFO 19072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:22:30.096  INFO 19072 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.414 seconds (JVM running for 6.716)
+2022-05-13 21:22:57.004  INFO 19072 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1646659473,1646659616,1646751889; Webstorm-d89d5f3c=722a1700-7da4-481f-ba3d-3e3831707137; Idea-fd1d9975=50bf7c6e-81ab-49ab-8f3e-a25821275e5f] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-13 21:22:57.018  INFO 19072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:22:57.018  INFO 19072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:22:57.020  INFO 19072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-13 21:22:57.133  INFO 19072 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:22:57.478  INFO 19072 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 21:24:50.292  INFO 19072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 21:24:50.315  INFO 19072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 21:24:58.054  INFO 2380 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 2380 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:24:58.056  INFO 2380 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:24:58.123  INFO 2380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:24:58.124  INFO 2380 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:24:59.954  INFO 2380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:24:59.966  INFO 2380 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:24:59.966  INFO 2380 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:25:00.118  INFO 2380 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:25:00.119  INFO 2380 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1994 ms
+2022-05-13 21:25:01.720  INFO 2380 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:25:02.258  INFO 2380 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:25:02.309  INFO 2380 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:25:02.324  INFO 2380 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 5.152 seconds (JVM running for 7.752)
+2022-05-13 21:25:10.771  INFO 2380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:25:10.774  INFO 2380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:25:10.781  INFO 2380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-05-13 21:25:11.062  INFO 2380 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:25:11.386  INFO 2380 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 21:31:34.414  INFO 2380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 21:31:34.433  INFO 2380 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 21:31:41.270  INFO 16068 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 16068 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:31:41.271  INFO 16068 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:31:41.324  INFO 16068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:31:41.324  INFO 16068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:31:42.875  INFO 16068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:31:42.885  INFO 16068 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:31:42.885  INFO 16068 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:31:43.010  INFO 16068 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:31:43.010  INFO 16068 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1684 ms
+2022-05-13 21:31:44.042  INFO 16068 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:31:44.583  INFO 16068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:31:44.633  INFO 16068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:31:44.651  INFO 16068 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.07 seconds (JVM running for 6.239)
+2022-05-13 21:31:52.870  INFO 16068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:31:52.872  INFO 16068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:31:52.873  INFO 16068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-13 21:31:52.986  INFO 16068 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:31:53.174  INFO 16068 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 21:36:01.656  INFO 16068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 21:36:01.673  INFO 16068 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 21:36:09.295  INFO 6908 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 6908 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:36:09.297  INFO 6908 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:36:09.352  INFO 6908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:36:09.352  INFO 6908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:36:10.983  INFO 6908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:36:10.994  INFO 6908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:36:10.994  INFO 6908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:36:11.138  INFO 6908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:36:11.138  INFO 6908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1785 ms
+2022-05-13 21:36:12.121  INFO 6908 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:36:12.700  INFO 6908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:36:12.746  INFO 6908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:36:12.760  INFO 6908 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.253 seconds (JVM running for 6.612)
+2022-05-13 21:36:17.206  INFO 6908 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:36:17.207  INFO 6908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:36:17.210  INFO 6908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-13 21:36:17.448  INFO 6908 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:36:17.841  INFO 6908 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 21:37:04.483  INFO 6908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 21:37:04.493  INFO 6908 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 21:37:11.257  INFO 5100 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 5100 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:37:11.258  INFO 5100 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:37:11.313  INFO 5100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:37:11.314  INFO 5100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:37:12.859  INFO 5100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:37:12.870  INFO 5100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:37:12.871  INFO 5100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:37:13.010  INFO 5100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:37:13.010  INFO 5100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1695 ms
+2022-05-13 21:37:14.042  INFO 5100 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:37:14.567  INFO 5100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:37:14.631  INFO 5100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:37:14.649  INFO 5100 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.234 seconds (JVM running for 6.364)
+2022-05-13 21:37:17.886  INFO 5100 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:37:17.889  INFO 5100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:37:17.908  INFO 5100 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2022-05-13 21:37:18.248  INFO 5100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:37:18.752  INFO 5100 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 21:37:56.936  INFO 5100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 21:37:56.952  INFO 5100 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 21:38:05.090  INFO 18104 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 18104 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:38:05.091  INFO 18104 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:38:05.146  INFO 18104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:38:05.146  INFO 18104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:38:06.789  INFO 18104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:38:06.802  INFO 18104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:38:06.802  INFO 18104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:38:06.929  INFO 18104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:38:06.929  INFO 18104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1782 ms
+2022-05-13 21:38:07.900  INFO 18104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:38:08.403  INFO 18104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:38:08.457  INFO 18104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:38:08.474  INFO 18104 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.222 seconds (JVM running for 6.934)
+2022-05-13 21:38:10.876  INFO 18104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:38:10.878  INFO 18104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:38:10.881  INFO 18104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-13 21:38:11.111  INFO 18104 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:38:11.452  INFO 18104 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 21:39:19.747  INFO 18104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 21:39:19.761  INFO 18104 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 21:39:26.064  INFO 18228 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 18228 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 21:39:26.066  INFO 18228 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 21:39:26.118  INFO 18228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 21:39:26.119  INFO 18228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 21:39:27.629  INFO 18228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 21:39:27.638  INFO 18228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 21:39:27.638  INFO 18228 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 21:39:27.748  INFO 18228 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 21:39:27.748  INFO 18228 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1627 ms
+2022-05-13 21:39:28.708  INFO 18228 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 21:39:29.259  INFO 18228 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 21:39:29.313  INFO 18228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 21:39:29.333  INFO 18228 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.023 seconds (JVM running for 6.123)
+2022-05-13 21:39:31.843  INFO 18228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 21:39:31.846  INFO 18228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 21:39:31.919  INFO 18228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 72 ms
+2022-05-13 21:39:32.191  INFO 18228 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 21:39:32.557  INFO 18228 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-13 22:05:42.638  INFO 18228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-13 22:05:42.672  INFO 18228 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-13 22:05:49.833  INFO 15760 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on FGTWDLHNN1000 with PID 15760 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-13 22:05:49.835  INFO 15760 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-13 22:05:49.897  INFO 15760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-13 22:05:49.898  INFO 15760 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-13 22:05:51.528  INFO 15760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-13 22:05:51.539  INFO 15760 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-13 22:05:51.539  INFO 15760 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-13 22:05:51.665  INFO 15760 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-13 22:05:51.666  INFO 15760 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1767 ms
+2022-05-13 22:05:52.769  INFO 15760 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-13 22:05:53.302  INFO 15760 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-13 22:05:53.351  INFO 15760 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-13 22:05:53.370  INFO 15760 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.266 seconds (JVM running for 6.213)
+2022-05-13 22:05:59.680  INFO 15760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-13 22:05:59.683  INFO 15760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-13 22:05:59.686  INFO 15760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-13 22:05:59.884  INFO 15760 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-13 22:06:00.266  INFO 15760 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

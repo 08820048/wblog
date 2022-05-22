@@ -1,0 +1,86 @@
+2022-05-05 21:57:06.423  INFO 49836 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on 沉迷代码日渐消瘦 with PID 49836 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-05 21:57:06.432  INFO 49836 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-05 21:57:06.518  INFO 49836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-05 21:57:06.519  INFO 49836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-05 21:57:09.050  INFO 49836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-05 21:57:09.071  INFO 49836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-05 21:57:09.072  INFO 49836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-05 21:57:09.340  INFO 49836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-05 21:57:09.341  INFO 49836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2821 ms
+2022-05-05 21:57:10.605  INFO 49836 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-05 21:57:11.319  INFO 49836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-05 21:57:11.370  INFO 49836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-05 21:57:11.387  INFO 49836 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 6.073 seconds (JVM running for 9.309)
+2022-05-05 21:57:59.420  INFO 49836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 21:57:59.421  INFO 49836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-05 21:57:59.426  INFO 49836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-05-05 21:57:59.614  INFO 49836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-05 21:57:59.928  INFO 49836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-05 21:58:04.357  INFO 49836 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1651759084; Hm_lpvt_26fae286191cc13e347e06f95030c536=1651759084] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-05 22:20:23.047  INFO 49836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-05 22:20:23.096  INFO 49836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-05 22:20:32.158  INFO 49136 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on 沉迷代码日渐消瘦 with PID 49136 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-05 22:20:32.160  INFO 49136 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-05 22:20:32.226  INFO 49136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-05 22:20:32.227  INFO 49136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-05 22:20:34.255  INFO 49136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-05 22:20:34.269  INFO 49136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-05 22:20:34.269  INFO 49136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-05 22:20:34.446  INFO 49136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-05 22:20:34.446  INFO 49136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2218 ms
+2022-05-05 22:20:36.430  INFO 49136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-05 22:20:37.352  INFO 49136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-05 22:20:37.405  INFO 49136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-05 22:20:37.425  INFO 49136 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 6.199 seconds (JVM running for 9.018)
+2022-05-05 22:20:52.152  INFO 49136 --- [http-nio-8080-exec-6] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1651759084; Hm_lpvt_26fae286191cc13e347e06f95030c536=1651759084] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-05 22:20:52.167  INFO 49136 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 22:20:52.168  INFO 49136 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-05 22:20:52.175  INFO 49136 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-05 22:20:55.182  INFO 49136 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-05 22:20:55.610  INFO 49136 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-05 22:21:36.878  INFO 49136 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-05 22:21:36.912  INFO 49136 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-05 22:22:31.220  INFO 53208 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on 沉迷代码日渐消瘦 with PID 53208 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-05 22:22:31.221  INFO 53208 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-05 22:22:31.284  INFO 53208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-05 22:22:31.284  INFO 53208 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-05 22:22:33.807  INFO 53208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-05 22:22:33.833  INFO 53208 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-05 22:22:33.834  INFO 53208 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-05 22:22:34.107  INFO 53208 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-05 22:22:34.108  INFO 53208 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2823 ms
+2022-05-05 22:22:35.628  INFO 53208 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-05 22:22:36.255  INFO 53208 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-05 22:22:36.314  INFO 53208 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-05 22:22:36.330  INFO 53208 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 6.105 seconds (JVM running for 12.498)
+2022-05-05 22:22:49.528  INFO 53208 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1651759084; Hm_lpvt_26fae286191cc13e347e06f95030c536=1651760468] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-05 22:22:49.569  INFO 53208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 22:22:49.571  INFO 53208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-05 22:22:49.577  INFO 53208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-05-05 22:22:49.935  INFO 53208 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-05 22:22:50.562  INFO 53208 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-05 23:03:52.428  INFO 53208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-05 23:03:52.472  INFO 53208 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-05 23:04:06.318  INFO 18168 --- [restartedMain] com.waer.wblog.WblogApplication          : Starting WblogApplication using Java 11.0.4 on 沉迷代码日渐消瘦 with PID 18168 (E:\myBlog\wblog\target\classes started by 22170 in E:\myBlog\wblog)
+2022-05-05 23:04:06.320  INFO 18168 --- [restartedMain] com.waer.wblog.WblogApplication          : The following profiles are active: dev
+2022-05-05 23:04:06.387  INFO 18168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-05 23:04:06.387  INFO 18168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-05 23:04:08.398  INFO 18168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-05 23:04:08.413  INFO 18168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-05 23:04:08.414  INFO 18168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-05-05 23:04:08.576  INFO 18168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-05 23:04:08.577  INFO 18168 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2189 ms
+2022-05-05 23:04:09.708  INFO 18168 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-05 23:04:10.309  INFO 18168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-05 23:04:10.372  INFO 18168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-05 23:04:10.393  INFO 18168 --- [restartedMain] com.waer.wblog.WblogApplication          : Started WblogApplication in 4.843 seconds (JVM running for 7.079)
+2022-05-05 23:04:16.129  INFO 18168 --- [http-nio-8080-exec-6] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1651759084; Hm_lpvt_26fae286191cc13e347e06f95030c536=1651760573] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2022-05-05 23:04:16.151  INFO 18168 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-05 23:04:16.157  INFO 18168 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-05 23:04:16.169  INFO 18168 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2022-05-05 23:04:19.343  INFO 18168 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-05 23:04:19.661  INFO 18168 --- [http-nio-8080-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.

@@ -16,7 +16,9 @@
   <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
   <link rel="stylesheet" href="../static/css/timeline.css" th:href="@{/css/timeline.css}">
   <link rel="stylesheet" href="../static/css/theme.css" th:href="@{/css/theme.css}">
-  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="stylesheet" href="../static/css/hover.css" th:href="@{/css/hover.css}">
+<!--  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">-->
+<!--  <link href="../static/lib/css/hover.css" rel="stylesheet" th:href="@{/lib/css/hover.css}" >-->
 
 
 </head>
@@ -27,15 +29,15 @@
   <div class="ui container">
     <div class="ui inverted secondary stackable menu" id="menu">
       <h2><i class="teal code icon loading icon"></i></h2>
-      <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">Tisox</h2>
+      <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">TisoxのBlog</h2>
       <!--<div class="right m-item item m-mobile-hide">-->
       <a href="#" th:href="@{/}" class="m-item item m-mobile-hide shake-vertical" ><i class="home icon"></i>首页</a>
       <a href="#" th:href="@{/types/-1}" class="active m-item item m-mobile-hide shake-vertical"><i
               class="clone outline icon"></i>分类</a>
       <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide shake-vertical"><i class="clock icon"></i>时间轴</a>
-      <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide shake-vertical"><i class="clipboard list icon"></i>卷王录</a>
+<!--      <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide shake-vertical"><i class="clipboard list icon"></i>卷王录</a>-->
       <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide shake-vertical"><i class="book icon"></i>留言板</a>
-      <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide shake-vertical"><i class="pencil alternate icon"></i>不良簿
+      <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide shake-vertical"><i class="pencil alternate icon"></i>友链
       </a>
 
       <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide shake-vertical"><i class="info icon"></i>关于我</a>
@@ -99,7 +101,7 @@
 <input type="hidden" id="blogId" th:value="${blog.id}">
 <div id="waypoint" class="m-margin- animated fadeIn line-numbers  match-braces rainbow-braces ">
 
-  <div class="ui container m-opacity box-shadow-max " id="content_p">
+  <div class="ui container m-opacity box-shadow-max hvr-curl-bottom-right" id="content_p">
     <!--内容-->
     <div class="ui attached padded segment " >
 
@@ -623,9 +625,9 @@ h5,h6{font-size:1em;}
     <button class="ui primary button active" data-tooltip="光明不灭" id="sun"><font style="vertical-align: inherit;"><font
             style="vertical-align:
          inherit;"><i class="sun outline icon"></i></font></font></button>
-    <button type="button" class="ui toc teal button" >目录</button>
-    <a href="#comment-container" class="ui teal button" >评论</a>
-    <button type="button" class="ui share teal button" >分享</button>
+    <button type="button" class="ui toc purple button" >目录</button>
+    <a href="#comment-container" class="ui purple button" >评论</a>
+    <button type="button" class="ui share purple button" >分享</button>
     <!--<button class="ui wechat icon button"><i class="weixin icon"></i></button>-->
     <div id="toTop-button" class="ui icon button" ><i class="chevron up icon"></i></div>
   </div>

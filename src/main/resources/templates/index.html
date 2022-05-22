@@ -4,7 +4,7 @@
     <meta name="baidu-site-verification" content="U67Xy1Qfos" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tisox不良人</title>
+    <title>TisoxのBlog</title>
 
     <link rel="stylesheet" href="../static/lib/Semantic/semantic.min.css" th:href="@{/lib/Semantic/semantic.min.css}">
     <link href="../static/images/favicon.ico" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
@@ -13,42 +13,49 @@
     <link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
     <link rel="stylesheet" href="../static/css/theme.css" th:href="@{/css/theme.css}">
     <link rel="stylesheet" href="../static/css/bg.css" th:href="@{/css/bg.css}">
-
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="../static/css/hover.css" th:href="@{/css/hover.css}">
+<!--    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">-->
 
 <body>
 
 <!--导航-->
-<nav id="nav" class="gird-header" style="display: none">
+<nav id="nav" class="gird-header " style="display: none">
     <div class="ui container">
-        <div class="ui inverted secondary  menu" id="menu">
-            <h2><i class="teal code icon loading icon"></i></h2>
-            <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">Tisox</h2>
+        <div class="ui inverted secondary stackable menu" id="menu_2">
+            <h2 class="ui  header item"  id="update" style="font-family:'LiHei Pro Medium';color: red;">TisoxのBlog</h2>
             <!--<div class="right m-item item m-mobile-hide">-->
-            <a href="#" th:href="@{/}" class="active m-item item"><i class="home icon"></i>首页</a>
-                <a href="#" th:href="@{/types/-1}" class="m-item item shake-vertical" style="--x:0"><i
-                        class="clone outline icon"></i>分类</a>
-                <a href="#" th:href="@{/archives}" class="m-item item shake-vertical" style="--x:0"><i class="clock icon"></i>时间轴</a>
-                <a href="#" th:href="@{/music}" class="m-item item shake-vertical" style="--x:0"><i class="clipboard list icon"></i>卷王录</a>
-                <a href="#" th:href="@{/message}" class="m-item item shake-vertical" style="--x:0"><i class="book icon"></i>留言板</a>
-                <a href="#" th:href="@{/friends}" class="m-item item shake-vertical" style="--x:0"><i
-                        class="pencil alternate icon"></i>不良簿</a>
+            <a href="#" th:href="@{/}" class="active m-item item hvr-shutter-in-horizontal hvr-float-shadow"><i
+                    class="home icon blue"></i>首页</a>
+                <a href="#" th:href="@{/types/-1}" class="m-item item shake-vertical hvr-shutter-in-horizontal" style="--x:0"><i
+                        class="clone outline icon blue" ></i>分类</a>
+                <a href="#" th:href="@{/archives}" class="m-item item  hvr-shutter-in-horizontal" style="--x:0"><i
+                        class="clock icon blue" ></i>时间轴</a>
+<!--                <a href="#" th:href="@{/music}" class="m-item item hvr-shutter-in-horizontal" style="&#45;&#45;x:0"><i class="clipboard list icon"></i>卷王录</a>-->
+                <a href="#" th:href="@{/message}" class="m-item item hvr-shutter-in-horizontal" style="--x:0"><i
+                        class="book icon blue"></i>留言板</a>
+                <a href="#" th:href="@{/friends}" class="m-item item hvr-shutter-in-horizontal" style="--x:0"><i
+                        class="pencil alternate icon blue" ></i>友链</a>
 
-                <a href="#" th:href="@{/about}" class="m-item item shake-vertical" style="--x:0"><i class="info icon"></i>关于我</a>
+                <a href="#" th:href="@{/about}" class="m-item item hvr-shutter-in-horizontal" style="--x:0"><i
+                        class="info icon blue"></i>关于我</a>
             <!--</div>-->
             <div class="right m-item item">
                 <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                     <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                        <input style="color: white" type="text" name="query" placeholder="小海捞针...." th:value="${query}">
+                        <input style="color: white" type="text" name="query" placeholder="搜点东西...."
+                               th:value="${query}">
                         <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                     </div>
                 </form>
             </div>
         </div>
+
     </div>
+
     <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-hide" style="display: none">
         <i class="sidebar icon"></i>
     </a>
+
 </nav>
 
 
@@ -64,17 +71,18 @@
             <img class="ui circular image shake-crazy" align="center" src="../static/images/my1.jpg"
                  th:src="@{/images/my1.jpg}" style="width: 150px;height: 150px;">
         </div>
-        <div class="m-font-size-title-mediul shake-horizontal" align="center" style="color: black">Tisox不良人</div>
+        <div class="m-font-size-title-mediul shake-horizontal" align="center" style="color: #dc740a">TisoxのBlog</div>
 
         <div class="" align="center">
-            <a href="#" class="ui tencent circular icon button"><i class="user icon"></i></a>
-            <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
-            <a href="#" class="ui qq circular icon button" data-content="316392836" data-position="bottom center"><i class="qq icon"></i></a>
+            <a href="#" class="ui tencent circular icon button"><i class="user icon blue"></i></a>
+            <a href="#" class="ui wechat circular icon button"><i class="weixin icon blue"></i></a>
+            <a href="#" class="ui qq circular icon button" data-content="316392836" data-position="bottom center"><i
+                    class="qq icon blue"></i></a>
             <a href="https://github.com/xiaoyivip" target="_blank" class="ui github circular icon button"
-               data-content="点击跳转GitHub" data-position="bottom center"><i class="github icon"></i></a>
+               data-content="点击跳转GitHub" data-position="bottom center"><i class="github icon blue"></i></a>
 <!--            <a href="https://WAer.blog.csdn.net/" target="_blank" class="ui csdn circular icon button" data-content="点击跳转CSDN" data-position="bottom center"><i class="copyright outline icon"></i></a>-->
-            <a href="#" class="ui email circular icon button" data-content="maropellegrin40@gmail.com"
-               data-position="bottom center"><i class="envelope  icon"></i></a>
+            <a href="#" class="ui email circular icon button" data-content="ilikexff@gmail.com"
+               data-position="bottom center"><i class="envelope  icon blue"></i></a>
         </div>
 
         <div class="ui tencent-qr flowing popup transition hidden">
@@ -93,28 +101,30 @@
             <div align="center">QQ</div>
         </div>
 
-        <div class="m-font-size-text dark" align="center">惟有热爱，可抵岁月漫长!</div>
+        <div class="m-font-size-text dark " align="center">惟有热爱，可抵岁月漫长!</div>
         <hr style="width: 40%">
 <!--        <h5 class="m-font-size-text-init-title m-margin-top-large">你说我是错的,那你最好证明你是对的,谢谢。<i-->
 <!--                class="smile outline icon"></i></h5>-->
-        <h5  class="m-font-size-text-init-title m-margin-top-large h5txt">如果你没有能力，你就不会知道自己没有能力。</h5>
-        <h5 class="m-font-size-text-init-title h5txt">即庸人容易因欠缺自知之明而自我膨胀。</h5>
-        <div id="waypoint" class="ui m-margin-top-large" align="center" >
+        <h5  class="m-font-size-text-init-title m-margin-top-large h5txt">祝你岁月无波澜，敬我余生不悲观。</h5>
+<!--        <h5 class="m-font-size-text-init-title h5txt">即庸人容易因欠缺自知之明而自我膨胀。</h5>-->
+        <div id="waypoint" class="ui m-margin-top-large " align="center" >
             <a href="#" th:href="@{/}"
-               class="shake-vertical ui circular icon button  m-item item m-mobile-hide m-index-btn"
-               th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+               class="shake-vertical ui circular icon button  m-item item m-mobile-hide m-index-btn hvr-shutter-in-horizontal"
+               th:classappend="${n==1} ? 'active'"><i class="home icon blue"></i>首页</a>
             <a href="#" th:href="@{/types/-1}"
-               class="shake-vertical ui circular icon button  m-item item m-mobile-hide m-index-btn" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
+               class="shake-vertical ui circular icon button  m-item item m-mobile-hide m-index-btn hvr-shutter-in-horizontal"
+               th:classappend="${n==2} ? 'active'"><i class="clone outline icon blue"></i>分类</a>
             <a href="#" th:href="@{/archives}"
-               class="shake-vertical ui circular icon button  m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clock icon"></i>时间轴</a>
-            <a href="#" th:href="@{/music}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
-               th:classappend="${n==5} ? 'active'"><i class="clipboard list icon"></i>卷王录</a>
-            <a href="#" th:href="@{/message}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
-               th:classappend="${n==6} ? 'active'"><i class="book icon"></i>留言板</a>
-            <a href="#" th:href="@{/friends}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
-               th:classappend="${n==7} ? 'active'"><i class="shake-vertical pencil alternate icon"></i>不良簿</a>
-            <a href="#" th:href="@{/about}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide"
-               th:classappend="${n==9} ? 'active'"><i class="info icon"></i>关于我</a>
+               class="shake-vertical ui circular icon button  m-item item m-mobile-hide hvr-shutter-in-horizontal"
+               th:classappend="${n==4} ? 'active'"><i class="clock icon blue"></i>时间轴</a>
+<!--            <a href="#" th:href="@{/music}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide hvr-shutter-in-horizontal"-->
+<!--               th:classappend="${n==5} ? 'active'"><i class="clipboard list icon"></i>卷王录</a>-->
+            <a href="#" th:href="@{/message}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide hvr-shutter-in-horizontal"
+               th:classappend="${n==6} ? 'active'"><i class="book icon blue"></i>留言板</a>
+            <a href="#" th:href="@{/friends}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide hvr-shutter-in-horizontal"
+               th:classappend="${n==7} ? 'active'"><i class="shake-vertical pencil alternate icon blue"></i>友链</a>
+            <a href="#" th:href="@{/about}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide hvr-shutter-in-horizontal"
+               th:classappend="${n==9} ? 'active'"><i class="info icon blue"></i>关于我</a>
         </div>
         <div class="hiddenDiv"></div>
     </div>
@@ -127,16 +137,16 @@
 <div class="ui m-padded-tb-large" >
     <div class="ui m-container-small m-opacity">
         <div class="ui secondary segment " align="center">
-            <i class="bookmark icon"></i>最新推荐
+            <i class="bookmark icon blue"></i>最新推荐
         </div>
     </div>
     <div class="ui stackable m-container-mini m-opacity grid" >
-        <div class="m-margin-tb-tiny four wide column upbtn " th:each="blog : ${recommendedBlogs}"
+        <div class="m-margin-tb-tiny four wide column upbtn  hvr-curl-top-left" th:each="blog : ${recommendedBlogs}"
              id="recommend" >
             <a href="#" class="class_outer" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
                 <img src="https://images.waer.ltd/img/1.jpg" th:src="@{${blog.firstPicture}}"  alt="" class="ui rounded image">
                 <span class="class_cover">
-                     <h4 class="m-font-size-blog-text m-margin-tb-tiny" th:text="${blog.title}">大圣，此去欲何?</h4>
+                     <h4 class="m-font-size-blog-text m-margin-tb-tiny orange" th:text="${blog.title}">大圣，此去欲何?</h4>
                   </span>
             </a>
         </div>
@@ -152,17 +162,22 @@
             <div class="ui vertical segment">
                 <div class="ui m-container-small m-opacity">
                     <div class="ui secondary segment " align="center">
-                        <i class="bookmark icon"></i>最新文章
+                        <i class="bookmark icon blue"></i>最新文章
                     </div>
                 </div>
                 <!--博文列表-->
-                <div class="ui padded segment m-padded-tb-large m-opacity  upbtn " id="list"
+                <div class="ui padded segment m-padded-tb-large m-opacity  upbtn hvr-curl-top-left" id="list"
                      th:each="blog : ${pageInfo.list}">
                     <div class="ui large aligned mobile reversed stackable grid">
                         <!--博文信息-->
                         <div class="eleven wide column ">
-                            <h3 class="ui header" ><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black m-title-font" th:text="${blog.title}">大圣，此去欲何?</a></h3>
-                            <p class="m-text m-margin-top-max" th:text="|${blog.description}......|">戴上金箍，没法爱你；放下金箍，没法保护你。我知道上天不会给我第二次机会，曾经我们说好的永远，原来也仅仅只有，十二画，而已。“大圣，此去欲何?”“踏南天，碎凌霄。”“若一去不回……”“便一去不回” 其实很多时候，我们都是有机会的，最后真正放弃的，是我们自己。......</p>
+                            <h3 class="ui header blue" ><a href="#"
+                                                                          th:href="@{/blog/{id}(id=${blog.id})}"
+                                                          target="_blank"
+                                                      class="m-black m-title-font " th:text="${blog.title}">大圣，此去欲何?
+                            </a></h3>
+                            <p class="m-text m-margin-top-max"
+                               th:text="|${blog.description}......|">戴上金箍，没法爱你；放下金箍，没法保护你。我知道上天不会给我第二次机会，曾经我们说好的永远，原来也仅仅只有，十二画，而已。“大圣，此去欲何?”“踏南天，碎凌霄。”“若一去不回……”“便一去不回” 其实很多时候，我们都是有机会的，最后真正放弃的，是我们自己。......</p>
                             <div class="ui m-margin-top-max grid">
                                 <div class="eleven wide column">
                                     <div class="ui mini horizontal link list">
@@ -241,7 +256,7 @@
 <br>
 <br>
 <!--底部栏-->
-<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity-tiny " id="footer" >
+<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity" id="footer" >
     <!--容器-->
     <div class="ui center aligned container">
         <div class="ui inverted divided stackable grid">
@@ -253,8 +268,8 @@
                 <!--</div>-->
                 <!--</div>-->
                 <div class="ui inverted link list">
-                    <div href="#" class="m-text-thin">Email：maropellegrin40@gmail.com</div>
-                    <div href="#" class="m-text-thin">QQ：2217021563</div>
+                    <div href="#" class="m-text-thin hvr-float-shadow">Email：ilikexff@gmail.com</div>
+                    <div href="#" class="m-text-thin hvr-float-shadow">QQ：2217021563</div>
                 </div>
             </div>
 
@@ -262,9 +277,10 @@
                 <div class="ui inverted link list">
                     <div class="item">
                         <!--微信二维码-->
-                        <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced " >关注公众号</div>
-                        <img src="../static/images/wxzgh.jpg" th:src="@{/images/wxzgh.jpg}"
-                             class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                        <div style="font-size: large;font-weight: bold"
+                             class="ui inverted m-text-thin m-text-spaced  " >关注公众号</div>
+                        <img  id="g" src="../static/images/wxzgh.jpg" th:src="@{/images/wxzgh.jpg}"
+                             class="ui m-margin-top rounded image hvr-float-shadow" alt="" style="width: 110px">
                     </div>
                 </div>
             </div>
@@ -274,18 +290,16 @@
                     <div class="item">
                         <!--微信二维码-->
                         <div style="font-size: large;font-weight: bold"
-                             class="ui inverted m-text-thin m-text-spaced " >个人飞书</div>
-                        <img src="../static/images/fs.jpg" th:src="@{/images/fs.jpg}"
-                             class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                             class="ui inverted m-text-thin m-text-spaced " >新浪微博</div>
+                        <img id="f" src="../static/images/fs.jpg" th:src="@{/images/fs.jpg}"
+                             class="ui m-margin-top rounded image hvr-float-shadow" alt="" style="width: 110px">
                     </div>
                 </div>
             </div>
             <!--博客运行时间统计-->
-            <!--博客运行时间统计-->
-            <!--博客运行时间统计-->
             <div class="four wide column">
                 <div style="font-size: large;font-weight: bold"
-                     class="ui inverted  m-text-thin m-text-spaced m-margin-top">博客信息</div>
+                     class="ui inverted  m-text-thin m-text-spaced m-margin-top hvr-float-shadow">博客信息</div>
                 <!--<p id="htmer_time" class="item m-text-thin"></p>-->
                 <div id="blog-message">
                     <div class="ui inverted link list" style="align-content: center;margin-top: 10px" th:fragment="blogMessage">
@@ -317,6 +331,27 @@
     </div>
 </footer>
 
+<!--更新日志-->
+<div class="ui basic modal">
+    <div class="ui icon header">
+        <i class="archive icon"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        网站更新日志
+    </font></font></div>
+    <div class="content">
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的收件箱已满，您希望我们启用旧邮件的自动存档功能吗？</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的收件箱已满，您希望我们启用旧邮件的自动存档功能吗？</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的收件箱已满，您希望我们启用旧邮件的自动存档功能吗？</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的收件箱已满，您希望我们启用旧邮件的自动存档功能吗？</font></font></p>
+        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您的收件箱已满，您希望我们启用旧邮件的自动存档功能吗？</font></font></p>
+    </div>
+    <div class="actions">
+        <div class="ui green ok inverted button">
+            <i class="checkmark icon"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            关闭
+        </font></font></div>
+    </div>
+</div>
+
 <!--<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>-->
 <script src="../static/lib/jquery/jquery-3.1.1.min.js" th:src="@{/lib/jquery/jquery-3.1.1.min.js}"></script>
 <script src="../static/lib/Semantic/semantic.min.js" th:src="@{/lib/Semantic/semantic.min.js}"></script>
@@ -326,21 +361,20 @@
 <script src="../static/lib/jquery/snow.js" th:src="@{/lib/jquery/snow.js}"></script>
 
 <script type="text/javascript">
+
+    // $("#menu_2").children("a").addClass("hvr-shutter-in-horizontal");
+    $("#update").click(function() {
+        $('.ui.basic.modal')
+            .modal('show')
+        ;
+    })
     $(document).ready(function() {
-        swal("【版本更新啦^-^，更新内容如下】：" +'\n'+
-            "1.前台页面大幅调整" +'\n'+
-            "2.[音乐盒][照片墙]被砍掉" +'\n'+
-            "3.公安备案已完成"+'\n'+
-            "4.新增：暗夜/白天模式切换【在右下角哦】"+'\n'+
-            "5.新增：特殊节日全站自动进入哀悼模式"+'\n'+
-            "6.美化了文章中的代码显示"+'\n'+
-            "7.添加了一些动画且砍掉了一些废材"+'\n'+
-            "8.其他bug修复"+'\n'+''
+        swal("当程序无响应时，你是继续等待还是关闭重开呢?"
             ,{
-            buttons:'朕已阅',
-            timer:10000
-            //icon:"success"
-        });
+                buttons:'关闭',
+                timer:50000,
+                icon:"warning"
+            });
     })
 </script>
 
@@ -429,7 +463,7 @@
             } else {
                 $('#nav').hide(500);
             }
-            console.log('Scrolled to waypoint!  ' + direction);
+           // console.log('Scrolled to waypoint!  ' + direction);
         }
     })
 </script>

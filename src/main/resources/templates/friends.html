@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tisox不良人-不良簿</title>
+    <title>TisoxのBlog-友链</title>
     <link href="../static/images/favicon.ico" th:href="@{/images/my1.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="../static/lib/Semantic/semantic.min.css" th:href="@{/lib/Semantic/semantic.min.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
@@ -19,16 +19,16 @@
     <div class="ui container">
         <div class="ui inverted secondary stackable menu" id="menu">
             <h2><i class="teal code icon loading icon"></i></h2>
-            <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">Tisox</h2>
+            <h2 class="ui  header item" style="font-family:'LiHei Pro Medium';color: red;">TisoxのBlog</h2>
             <!--<div class="right m-item item m-mobile-hide">-->
             <a href="#" th:href="@{/}" class="m-item item m-mobile-hide shake-vertical" ><i class="home icon"></i>首页</a>
             <a href="#" th:href="@{/types/-1}" class=" m-item item m-mobile-hide shake-vertical"><i
                     class="clone outline icon"></i>分类</a>
             <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide shake-vertical"><i class="clock icon"></i>时间轴</a>
-            <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide shake-vertical"><i class="clipboard list icon"></i>卷王录</a>
+<!--            <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide shake-vertical"><i class="clipboard list icon"></i>卷王录</a>-->
             <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide shake-vertical"><i class="book icon"></i>留言板</a>
             <a href="#" th:href="@{/friends}" class=" active m-item item m-mobile-hide shake-vertical"><i
-                    class="pencil alternate icon"></i>不良簿
+                    class="pencil alternate icon"></i>友链
             </a>
 
             <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide shake-vertical"><i class="info icon"></i>关于我</a>
@@ -56,7 +56,7 @@
     <div class="m-bg-class">
         <div align="center">
         <div class="ui container" align="center" style="position: relative ;bottom: -540px;" >
-            <div class="m-font-size-title " align="center" style="font-family:'STXingkai'">不良簿</div>
+            <div class="m-font-size-title " align="center" style="font-family:'STXingkai'">友链</div>
             <div class="m-font-size-text-init-title m-margin-top" align="center">哪来的那么多一见钟情，不过都是预谋已久的喜欢。</div>
         </div>
         </div>
@@ -70,10 +70,14 @@
         <div class="box-shadow-max">
         <div class="ui segment m-padded-tb-large m-opacity">
             <div class="ui container">
-                <div class="" style="font-size: 35px;font-weight: bold" align="center">友人入帐须知</div>
+                <div class="" style="font-size: 35px;font-weight: bold" align="center">须知</div>
                     <ui class="list">
-                        <div class="m-margin-left-mini m-margin-tb-tiny" style="font-size: large;font-weight: bold">网站要求</div>
+                        <div class="m-margin-left-mini m-margin-tb-tiny" style="font-size: large;font-weight: bold">
+                            友站要求/说明</div>
                         <br>
+                        <li class="m-margin-left-big m-margin-tb-tiny"
+                            style="font-size: medium;color: red">如网站/无法访问/证书失效/不符合以下要求/将会被删除链接。
+                        </li>
                         <li class="m-margin-left-big m-margin-tb-tiny" style="font-size: medium">无色情内容，无政治敏感内容，网站要能长期正常访问</li>
                         <li class="m-margin-left-big m-margin-tb-tiny" style="font-size: medium">二十篇以上个人原创文章，两个月内有新文章更新</li>
                         <li class="m-margin-left-big m-margin-tb-tiny" style="font-size: medium">原创博客、技术博客、游记博客优先</li>
@@ -81,24 +85,24 @@
                         <br>
                         <div class="m-margin-left-mini m-margin-tb-tiny" style="font-size: large;font-weight: bold">申请格式</div>
                         <br>
-                        <li class="m-margin-left-big m-margin-tb-tiny" style="font-size: medium">博客标题：Tisox不良人</li>
+                        <li class="m-margin-left-big m-margin-tb-tiny" style="font-size: medium">博客标题：TisoxのBlog</li>
                         <li class="m-margin-left-big m-margin-tb-tiny" style="font-size: medium">博客地址：https://www
                             .waer.ltd</li>
                         <li class="m-margin-left-big m-margin-tb-tiny"
-                            style="font-size: medium">图片地址：https://images.waer.ltd/img/mo1.jpg
+                            style="font-size: medium">图片地址：https://images.waer.ltd/img/toux1.jpg
                         </li>
                     </ui>
             </div>
         </div>
         </div>
 
-        <!--不良簿区域-->
+        <!--友链区域-->
         <div class="box-shadow-max">
         <div class="ui top attached teal m-opacity segment box-shadow-max">
             <div class="ui m-padded-tb-large m-container-tiny">
                 <div class="ui stackable m-container-mini m-opacity grid">
 
-                    <!--不良簿显示区域-->
+                    <!--友链显示区域-->
                     <div class="m-margin-tb-tiny four wide column" th:each="friendlink : ${friendlinks}">
                         <a href="#" class="class_outer" th:href="@{${friendlink.blogaddress}}" target="_blank">
                             <div align="center" >
