@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Objects;
 
 
 @Controller
@@ -144,6 +145,34 @@ public class BlogController {
         PageInfo<BlogQuery> pageInfo = new PageInfo<>(blogBySearch);
         model.addAttribute("pageInfo", pageInfo);
         return "admin/blogs :: blogList";
+    }
+
+    /**
+     * 撤回发布的文章
+     * @param id
+     * @param model
+     * @return
+     */
+    @GetMapping("/blogs/{id}/unpush")
+    public String unPublished(@PathVariable("id") Long id,Model model){
+        if(!Objects.equals(id,null)){
+             blogService.updatePublish(id);
+        }
+        return "redirect:/admin/blogs";
+    }
+
+    /**
+     * 发布文章
+     * @param id
+     * @param model
+     * @return
+     */
+    @GetMapping("/blogs/{id}/push")
+    public String Push(@PathVariable("id") Long id,Model model){
+        if(!Objects.equals(id,null)){
+            blogService.updatePush(id);
+        }
+        return "redirect:/admin/blogs";
     }
 }
 

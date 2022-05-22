@@ -56,4 +56,8 @@ public interface BlogDao {
     Integer getBlogCommentTotal();
 
     Integer getBlogMessageTotal();
+
+    int updatePushed(Long id);
+
+    int updatePush(Long id);
 }

@@ -121,4 +121,14 @@ public class BlogServiceImpl implements BlogService {
     public Integer getBlogMessageTotal() {
         return blogDao.getBlogMessageTotal();
     }
+
+    @Override
+    public int updatePublish(Long id) {
+        return blogDao.updatePushed(id);
+    }
+
+    @Override
+    public int updatePush(Long id) {
+        return blogDao.updatePush(id);
+    }
 }

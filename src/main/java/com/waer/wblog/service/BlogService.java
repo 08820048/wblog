@@ -47,4 +47,8 @@ public interface BlogService {
 
     Integer getBlogMessageTotal();
 
+    int updatePublish(Long id);
+
+    int updatePush(Long id);
+
 }

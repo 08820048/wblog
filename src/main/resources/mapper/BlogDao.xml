@@ -119,7 +119,8 @@
         t.name ,
         u.nickname, u.avatar
         from myblog.t_blog b, myblog.t_type t,myblog.t_user u
-        where b.type_id = t.id and  u.id = b.user_id order by b.update_time desc
+        where b.type_id = t.id and  u.id = b.user_id and b.published=1
+        order by b.update_time desc
     </select>
 
     <resultMap id="recommendBlog" type="com.waer.wblog.queryvo.RecommendBlog">
@@ -185,6 +186,16 @@
         update myblog.t_blog b set b.comment_count = (
         select count(*) from myblog.t_comment c where c.blog_id = #{id} and b.id = #{id}
         ) WHERE b.id = #{id}
+    </update>
+
+    <!--撤回发布文章-->
+    <update id="updatePushed">
+        update myblog.t_blog b set b.published=0
+        where b.id=#{id}
+    </update>
+    <update id="updatePush">
+        update myblog.t_blog b set b.published=1
+        where b.id=#{id}
     </update>
 
     <!--分类页面查询-->

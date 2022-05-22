@@ -112,7 +112,9 @@
             <td th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm')}">2020-01-02 05:20</td>
             <td>
               <!--th:href="@{/admin/types/{id}/input(id=${type.id})}"-->
-              <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+              <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini blue basic button">编辑</a>
+              <a href="#" th:href="@{/admin/blogs/{id}/unpush(id=${blog.id})}" class="ui mini orange basic button">撤回</a>
+              <a href="#" th:href="@{/admin/blogs/{id}/push(id=${blog.id})}" class="ui mini green basic button">发布</a>
               <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')" class="ui mini red basic button">删除</a>
             </td>
           </tr>
