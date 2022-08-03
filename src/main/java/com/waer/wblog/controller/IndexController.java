@@ -2,7 +2,9 @@ package com.waer.wblog.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.waer.wblog.annoation.topwd;
 import com.waer.wblog.dao.BlogDao;
+import com.waer.wblog.entity.Blog;
 import com.waer.wblog.entity.Comment;
 import com.waer.wblog.queryvo.DetailedBlog;
 import com.waer.wblog.queryvo.FirstPageBlog;
@@ -18,7 +20,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
+import java.util.Objects;
 
 
 /**
@@ -30,7 +38,7 @@ import java.util.List;
  */
 @Controller
 public class IndexController {
-
+    public static final String KEY = "4ee21d2553bef8ce2ea87f2a174e36d0";
     @Autowired
     private BlogDao blogDao;
 
@@ -73,6 +81,7 @@ public class IndexController {
 
 //    跳转博客详情页面
     @GetMapping("/blog/{id}")
+    @topwd
     public String blog(@PathVariable Long id, Model model) {
         DetailedBlog detailedBlog = blogService.getDetailedBlog(id);
         List<Comment> comments = commentService.listCommentByBlogId(id);
@@ -102,5 +111,55 @@ public class IndexController {
         model.addAttribute("blogCommentTotal",blogCommentTotal);
         model.addAttribute("blogMessageTotal",blogMessageTotal);
         return "index :: blogMessage";
+    }
+
+    @GetMapping("/wyy")
+    public  String request(String httpUrl,Model model){
+        BufferedReader reader = null;
+        String result = null;
+        StringBuffer sbf = new StringBuffer();
+
+        try {
+            URL url = new URL(httpUrl);
+            HttpURLConnection connection = (HttpURLConnection) url
+                    .openConnection();
+            connection.setRequestMethod("GET");
+            InputStream is = connection.getInputStream();
+            reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            String strRead = null;
+            while ((strRead = reader.readLine()) != null) {
+                sbf.append(strRead);
+                sbf.append("\r\n");
+            }
+            reader.close();
+            result = sbf.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        model.addAttribute("result",result);
+        return "index";
+    }
+
+    @GetMapping("/topwd")
+    public String topwd(){
+        return "topwd";
+    }
+
+    /**
+     * 验证私密文章密码
+     * @param id
+     * @param pwd
+     * @param model
+     * @return
+     */
+    @PostMapping("/pwd/{id}")
+    public String pwd(@PathVariable Long id, @RequestParam String pwd,Model model){
+        Blog blog = blogService.selectTopwdById(id);
+        if(pwd != null) {
+            if(Objects.equals(blog.getTopwd(),pwd)) {
+                return "redirect:/blog/" + id;
+            }
+        }
+        return "topwd";
     }
 }

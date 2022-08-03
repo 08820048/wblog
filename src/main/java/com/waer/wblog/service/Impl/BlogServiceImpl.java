@@ -10,14 +10,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
-/**
- * @Description: 博客列表业务层接口实现类
- * @Author: ONESTAR
- * @Date: Created in 23:36 2020/3/30
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+
 @Service
 public class BlogServiceImpl implements BlogService {
 
@@ -130,5 +125,24 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public int updatePush(Long id) {
         return blogDao.updatePush(id);
+    }
+
+    @Override
+    public int updatePrivated(Long id) {
+        return blogDao.updatePrivated(id);
+    }
+
+    @Override
+    public int updatePrivate(Long id) {
+        return blogDao.updatePrivate(id);
+    }
+
+    @Override
+    public Blog selectTopwdById(Long id) {
+        Blog blog = blogDao.gettoPwd(id);
+        if(Objects.isNull(blog)){
+            throw new NotFoundException("该博客不存在");
+        }
+        return blog;
     }
 }

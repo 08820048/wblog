@@ -72,7 +72,7 @@
             <input type="hidden" name="parentMessage.id" value="-1">
             <!--                    留言区-->
             <div class="field">
-                <textarea name="content" placeholder="请输入留言信息..."></textarea>
+                <textarea name="content" placeholder="请输入留言信息:长度<30..."></textarea>
             </div>
             <div class="ui grid">
                 <!--                    输入姓名-->
@@ -80,7 +80,7 @@
                     <div class="field m-mobile-wide m-margin-bottom-small">
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="nickname" placeholder="昵称"
+                            <input type="text" name="nickname" placeholder="昵称：长度<8"
                                    th:value="${session.user}!=null ? ${session.user.nickname}">
                         </div>
                         <div class="ui pointing label" style="color: orangered">留一个响当当的名号,震惊四座！ </div>
@@ -380,7 +380,7 @@
         $("[name='email']").val('');
         $("[name='content']").val('');
         $("[name='parentMessage.id']").val(-1);
-        $("[name='content']").attr("placeholder", "请输入评论信息...");
+        $("[name='content']").attr("placeholder", "请输入评论信息:长度<15...");
     }
 
     function reply(obj) {
@@ -519,7 +519,7 @@
 <!--          <input type="hidden" name="parentMessage.id" value="-1">-->
 <!--          &lt;!&ndash;                    留言区&ndash;&gt;-->
 <!--          <div class="field">-->
-<!--              <textarea name="content" placeholder="请输入留言信息..."></textarea>-->
+<!--              <textarea name="content" placeholder="请输入留言信息:长度<30..."></textarea>-->
 <!--          </div>-->
 <!--          <div class="ui grid">-->
 <!--              &lt;!&ndash;                    输入姓名&ndash;&gt;-->
@@ -820,7 +820,7 @@
 <!--        $("[name='email']").val('');-->
 <!--        $("[name='content']").val('');-->
 <!--        $("[name='parentmessage.id']").val(-1);-->
-<!--        $("[name='content']").attr("placeholder", "请输入评论信息...");-->
+<!--        $("[name='content']").attr("placeholder", "请输入评论信息:长度<15...");-->
 <!--    }-->
 
 <!--    function reply(obj) {-->

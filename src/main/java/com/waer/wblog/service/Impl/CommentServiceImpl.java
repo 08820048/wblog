@@ -3,6 +3,7 @@ import com.waer.wblog.dao.BlogDao;
 import com.waer.wblog.dao.CommentDao;
 import com.waer.wblog.entity.Comment;
 import com.waer.wblog.service.CommentService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ import java.util.List;
  * @URL: https://onestar.newstar.net.cn/
  */
 @Service
+@Slf4j
 public class CommentServiceImpl implements CommentService {
 
     @Autowired
@@ -78,10 +80,18 @@ public class CommentServiceImpl implements CommentService {
 //    新增评论
     @Override
     public int saveComment(Comment comment) {
+        int comments = 0;
         comment.setCreateTime(new Date());
-        int comments = commentDao.saveComment(comment);
-//        文章评论计数
-        blogDao.getCommentCountById(comment.getBlogId());
+        if(comment.getNickname()== null || comment.getNickname().equals("") || comment.getNickname().length() >=8){
+            log.error("评论人昵称不能为空或者长度不能超过8");
+            System.out.println("评论人昵称不能为空或者长度不能超过8");
+        }else if(comment.getContent() == null || comment.getContent().equals("") || comment.getContent().length() >=15) {
+            log.error("评论内容不能为空或者长度不能超过15");
+            System.out.println("评论内容不能为空或者长度不能超过15");
+        }else {
+             comments = commentDao.saveComment(comment);
+            blogDao.getCommentCountById(comment.getBlogId());
+        }
         return comments;
     }
 

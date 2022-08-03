@@ -115,6 +115,13 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.9</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/love.forte.simple-robot.http/client-restTemplate -->
+		<dependency>
+			<groupId>love.forte.simple-robot.http</groupId>
+			<artifactId>client-restTemplate</artifactId>
+			<version>2.3.8</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

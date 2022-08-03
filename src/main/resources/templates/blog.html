@@ -586,9 +586,9 @@ h5,h6{font-size:1em;}
         <input type="hidden" name="blogId" th:value="${blog.id}">
         <input type="hidden" name="parentComment.id" value="-1">
         <div class="fields" >
-          <textarea name="content"  placeholder="请输入评论信息..."></textarea>
+          <textarea name="content"  placeholder="请输入评论信息:长度<15..."></textarea>
         </div>
-<!--        <div  id="commentEditor" class="fields" contenteditable="true" data-placeholder="请输入评论信息..."></div>-->
+<!--        <div  id="commentEditor" class="fields" contenteditable="true" data-placeholder="请输入评论信息:长度<15..."></div>-->
 
 
         <div class="fields">
@@ -597,13 +597,15 @@ h5,h6{font-size:1em;}
           <div class="field m-mobile-wide m-margin-bottom-small">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" name="nickname" placeholder="姓名" th:value="${session.user}!=null ? ${session.user.nickname}">
+              <input type="text" name="nickname" id="name" placeholder="姓名"
+                     th:value="${session.user}!=null ? ${session.user.nickname}">
             </div>
           </div>
           <div class="field m-mobile-wide m-margin-bottom-small">
             <div class="ui left icon input">
               <i class="mail icon"></i>
-              <input type="text" name="email" placeholder="邮箱" th:value="${session.user}!=null ? ${session.user.email}">
+              <input type="text" name="email" id="email" placeholder="邮箱"
+                     th:value="${session.user}!=null ? ${session.user.email}">
             </div>
           </div>
           <div class="field  m-margin-bottom-small m-mobile-wide">
@@ -735,6 +737,7 @@ h5,h6{font-size:1em;}
 <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
 <script src="../static/lib/jquery/click_show_text.js" th:src="@{/lib/jquery/click_show_text.js}"></script>
 <script src="../static/lib/jquery/snow.js" th:src="@{/lib/jquery/snow.js}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <script th:inline="javascript">
 
@@ -766,12 +769,7 @@ h5,h6{font-size:1em;}
     document.getElementById("nowTime").innerHTML = timeValue+"好！当前时间为： "+newDate+"　"+week;
     setTimeout("getLangDate()",1000);
   }
-  /*加载emoji表情*/
-  onload = function () {
-    localStorage.setItem("blogFirstPicture",document.getElementById("firstPicture").value);
-    localStorage.setItem("blogTitle",document.getElementById("blogTitle").value);
-    localStorage.setItem("blogId",document.getElementById("blogId").value);
-  };
+
 
 
   $('.menu.toggle').click(function () {
@@ -899,7 +897,7 @@ h5,h6{font-size:1em;}
     $("[name='email']").val('');
     $("[name='content']").val('');
     $("[name='parentComment.id']").val(-1);
-    $("[name='content']").attr("placeholder", "请输入评论信息...");
+    $("[name='content']").attr("placeholder", "请输入评论信息:长度<15...");
   }
 
   function reply(obj) {
@@ -1045,6 +1043,17 @@ h5,h6{font-size:1em;}
   });
 
 </script>
+<!-- 复制内容弹窗版权提醒 -->
+<script type="text/javascript">
+  document.body.oncopy=function(){
+    swal("复制成功！撰文不易，转载请务必保留原文链接，谢谢合作！"
+            ,{
+              buttons:false,
+              timer:3000,
+              icon:"success"
+            });
+  }
 
+</script>
 </body>
 </html>

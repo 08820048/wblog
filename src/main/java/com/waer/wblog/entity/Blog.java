@@ -35,6 +35,10 @@ public class Blog {
     private String description;
     private Type type;
     private User user;
+
+    private boolean isPrivate;
+
+    private String topwd;
     private List<Comment> comments = new ArrayList<>();
 
     public Blog() {
@@ -200,6 +204,22 @@ public class Blog {
         this.comments = comments;
     }
 
+    public boolean isPrivate() {
+        return isPrivate;
+    }
+
+    public String getTopwd() {
+        return topwd;
+    }
+
+    public void setPrivate(boolean aPrivate) {
+        isPrivate = aPrivate;
+    }
+
+    public void setTopwd(String topwd) {
+        this.topwd = topwd;
+    }
+
     @Override
     public String toString() {
         return "Blog{" +
@@ -222,6 +242,8 @@ public class Blog {
                 ", description='" + description + '\'' +
                 ", type=" + type +
                 ", user=" + user +
+                ", isPrivate=" + isPrivate +
+                ", topwd='" + topwd + '\'' +
                 ", comments=" + comments +
                 '}';
     }

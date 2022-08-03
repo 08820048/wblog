@@ -4,6 +4,7 @@ package com.waer.wblog.service.Impl;
 import com.waer.wblog.dao.MessageDao;
 import com.waer.wblog.entity.Message;
 import com.waer.wblog.service.MessageService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,7 @@ import java.util.List;
  * @URL: https://onestar.newstar.net.cn/
  */
 @Service
+@Slf4j
 public class MessageServiceImpl implements MessageService {
 
     @Autowired
@@ -100,8 +102,18 @@ public class MessageServiceImpl implements MessageService {
     @Override
     //存储留言信息
     public int saveMessage(Message message) {
-        message.setCreateTime(new Date());
-        return messageDao.saveMessage(message);
+        if(message.getNickname() == null || message.getNickname().length()>8) {
+            log.error("留言姓名不能为空或者长度不能超过8");
+            System.out.println("留言姓名不能为空或者长度不能超过8");
+            return -1;
+        }else if (message.getContent() == null || message.getContent().length()>30) {
+            log.error("留言内容不能为空或者长度不能超过30");
+            System.out.println("留言内容不能为空或者长度不能超过30");
+            return -1;
+        }else {
+            message.setCreateTime(new Date());
+            return messageDao.saveMessage(message);
+        }
     }
 
 //    删除留言

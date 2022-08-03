@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../static/css/theme.css" th:href="@{/css/theme.css}">
     <link rel="stylesheet" href="../static/css/bg.css" th:href="@{/css/bg.css}">
     <link rel="stylesheet" href="../static/css/hover.css" th:href="@{/css/hover.css}">
+
 <!--    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">-->
 
 <body>
@@ -105,7 +106,7 @@
         <hr style="width: 40%">
 <!--        <h5 class="m-font-size-text-init-title m-margin-top-large">你说我是错的,那你最好证明你是对的,谢谢。<i-->
 <!--                class="smile outline icon"></i></h5>-->
-        <h5  class="m-font-size-text-init-title m-margin-top-large h5txt">祝你岁月无波澜，敬我余生不悲观。</h5>
+        <h5  class="m-font-size-text-init-title m-margin-top-large h5txt">你足够强大的话，可以不在乎世俗。</h5>
 <!--        <h5 class="m-font-size-text-init-title h5txt">即庸人容易因欠缺自知之明而自我膨胀。</h5>-->
         <div id="waypoint" class="ui m-margin-top-large " align="center" >
             <a href="#" th:href="@{/}"
@@ -126,11 +127,14 @@
             <a href="#" th:href="@{/about}" class="shake-vertical ui circular icon button  m-item item m-mobile-hide hvr-shutter-in-horizontal"
                th:classappend="${n==9} ? 'active'"><i class="info icon blue"></i>关于我</a>
         </div>
+        <span id="webtime" style="color: #0a001f;font-family: 'Andale Mono'; font-size: large;margin: auto;"></span>
         <div class="hiddenDiv"></div>
     </div>
-
 </div>
+<!--<div class="content" style="display: inline-block;vertical-align: center">-->
+<!--    <span  id="content_y"><sup id="source"></sup></span>-->
 
+<!--</div>-->
 
 
 <!--最新推荐-->
@@ -320,6 +324,7 @@
             </div>
         </div>
         <div class="ui inverted section divider"></div>
+
         <div style="color: #F08047;margin-top: -18px" class="ui inverted m-text-thin m-text-spaced"><i
                 class="hourglass start icon loading icon"></i> 博客营业中,<span
                 id="nowTime" class="item m-text-thin"></span></div>&nbsp;
@@ -368,12 +373,14 @@
             .modal('show')
         ;
     })
+
     $(document).ready(function() {
-        swal("当程序无响应时，你是继续等待还是关闭重开呢?"
+        swal("博客站点正在迁移，该站点近期将关闭\n" +
+            "另外，该博客已经开源,提供部署教程，如需自取\n"
             ,{
                 buttons:'关闭',
                 timer:50000,
-                icon:"warning"
+                icon:"success"
             });
     })
 </script>
@@ -535,6 +542,28 @@ var day = dates.getDate(); //当前系统时间的月份中的日
         }
     });
 </script>
+
+<!-- js -->
+<script type="text/javascript">
+    function show_runtime() {
+    window.setTimeout("show_runtime()", 1000);
+    X = new Date("12/31/2019 23:59:59");
+    Y = new Date();
+    T = (Y.getTime() - X.getTime());
+    M = 24 * 60 * 60 * 1000;
+    a = T / M;
+    A = Math.floor(a);
+    b = (a - A) * 24;
+    B = Math.floor(b);
+    c = (b - B) * 60;
+    C = Math.floor((b - B) * 60);
+    D = Math.floor((c - C) * 60);
+    document.getElementById("webtime").innerHTML =  A + "天" + B + "小时" + C + "分" + D + "秒"
+}
+show_runtime();
+</script>
+
+
 
 </body>
 </html>

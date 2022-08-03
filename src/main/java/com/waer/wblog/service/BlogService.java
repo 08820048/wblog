@@ -51,4 +51,10 @@ public interface BlogService {
 
     int updatePush(Long id);
 
+    int updatePrivated(Long id);
+
+    int updatePrivate(Long id);
+
+    Blog selectTopwdById(Long id);
+
 }

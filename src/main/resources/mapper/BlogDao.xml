@@ -197,6 +197,17 @@
         update myblog.t_blog b set b.published=1
         where b.id=#{id}
     </update>
+    <!--解除私密-->
+    <update id="updatePrivate">
+        update t_blog b set b.is_private=0
+        where b.id=#{id}
+    </update>
+
+    <!--设为私密-->
+    <update id="updatePrivated">
+        update t_blog b set b.is_private=1
+        where b.id=#{id}
+    </update>
 
     <!--分类页面查询-->
     <select id="getByTypeId" resultMap="firstPageBlog">
@@ -219,5 +230,9 @@
     </select>
     <select id="getBlogMessageTotal" resultType="Integer">
         select count(*) from myblog.t_message
+    </select>
+    <!--查询文章密码-->
+    <select id="gettoPwdget" resultType="java.lang.Integer" resultMap="blog">
+        select topwd from t_blog where id=#{id}
     </select>
 </mapper>
