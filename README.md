@@ -72,4 +72,4 @@
 - ....
 > 教程地址：
 [SpringBoot博客部署](https://www.waer.ltd/articles/2022/08/04/1659587541384.html)
-
+访问密码:0000
