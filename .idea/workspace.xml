@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="651028ce-dd9f-4fa8-8708-679834076af4" name="Default Changelist" comment="v1.1.1：&#10;-其他">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="myblog: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="myblog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="myblog: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="t_user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="AnnotationType" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/waer/wblog/service/Impl/UserServiceImpl.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.1" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="21SXGjCbMmz1jIKdqzz2huMCNwk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Project.color&quot;: &quot;480b3b&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/myBlog/wblog&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d51303d5bbd10d42f57a6493a5a0267b&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\myBlog\wblog\src\main\resources\static\images" />
+      <recent name="E:\myBlog\wblog\src\main\resources\static\css" />
+      <recent name="E:\myBlog\wblog\src\main\resources\static\lib" />
+      <recent name="E:\myBlog\wblog\src\main\java\com\waer\wblog\service\Impl" />
+      <recent name="E:\myBlog\wblog\src\main\java\com\waer\wblog\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\myBlog\wblog\src\main\resources\templates" />
+      <recent name="E:\myBlog\wblog\src\main\resources\static\css" />
+      <recent name="E:\myBlog\wblog\src\main\resources\static.js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.waer.wblog" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.WblogApplication">
+    <configuration name="APIT_test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.waer.wblog.util.APIT_test" />
+      <module name="wblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.waer.wblog.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kmp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.waer.wblog.kmp" />
+      <module name="wblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.waer.wblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kmp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.waer.wblog.kmp2" />
+      <module name="wblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.waer.wblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailTest.sendTemplateMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.waer.wblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.waer.wblog" />
+      <option name="MAIN_CLASS_NAME" value="com.waer.wblog.MailTest" />
+      <option name="METHOD_NAME" value="sendTemplateMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailTest.testHtmlMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="wblog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.waer.wblog.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.waer.wblog" />
+      <option name="MAIN_CLASS_NAME" value="com.waer.wblog.MailTest" />
+      <option name="METHOD_NAME" value="testHtmlMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WblogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wblog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.waer.wblog.WblogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.APIT_test" />
+        <item itemvalue="JUnit.MailTest.sendTemplateMail" />
+        <item itemvalue="JUnit.MailTest.testHtmlMail" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@90ec2eb9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@90ec2eb9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@37cf0f8f" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@90ec2eb9" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@76056608" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="651028ce-dd9f-4fa8-8708-679834076af4" name="Default Changelist" comment="" />
+      <created>1637935368731</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637935368731</updated>
+      <workItem from="1637935372976" duration="2950000" />
+      <workItem from="1637984693342" duration="11243000" />
+      <workItem from="1638000855256" duration="367000" />
+      <workItem from="1638001786569" duration="6473000" />
+      <workItem from="1638071164359" duration="13809000" />
+      <workItem from="1638167104202" duration="627000" />
+      <workItem from="1638270692224" duration="1148000" />
+      <workItem from="1638272186012" duration="211000" />
+      <workItem from="1638274757629" duration="8737000" />
+      <workItem from="1638329846556" duration="5732000" />
+      <workItem from="1638343879732" duration="8186000" />
+      <workItem from="1638435008390" duration="206000" />
+      <workItem from="1638497603459" duration="2104000" />
+      <workItem from="1638517414969" duration="20000" />
+      <workItem from="1638535311599" duration="7903000" />
+      <workItem from="1638610557472" duration="135000" />
+      <workItem from="1638619474236" duration="8109000" />
+      <workItem from="1638683395377" duration="49000" />
+      <workItem from="1638691532922" duration="2698000" />
+      <workItem from="1638840943177" duration="5595000" />
+      <workItem from="1638876100613" duration="409000" />
+      <workItem from="1638883014040" duration="1202000" />
+      <workItem from="1638924311027" duration="7799000" />
+      <workItem from="1638957228445" duration="6102000" />
+      <workItem from="1639126870631" duration="3724000" />
+      <workItem from="1639140999350" duration="4706000" />
+      <workItem from="1639192282701" duration="8681000" />
+      <workItem from="1639298746506" duration="684000" />
+      <workItem from="1639566940102" duration="4501000" />
+      <workItem from="1639727087856" duration="26901000" />
+      <workItem from="1639789709301" duration="34972000" />
+      <workItem from="1639880604965" duration="20879000" />
+      <workItem from="1639919173379" duration="1961000" />
+      <workItem from="1639972818309" duration="10466000" />
+      <workItem from="1639997406121" duration="644000" />
+      <workItem from="1639998539471" duration="2326000" />
+      <workItem from="1640081812083" duration="12000" />
+      <workItem from="1640868351536" duration="12396000" />
+      <workItem from="1641626092341" duration="341000" />
+      <workItem from="1641641081013" duration="1754000" />
+      <workItem from="1641912124503" duration="4513000" />
+      <workItem from="1642345098527" duration="814000" />
+      <workItem from="1642423516781" duration="12000" />
+      <workItem from="1642671658470" duration="41474000" />
+      <workItem from="1642812200221" duration="2198000" />
+      <workItem from="1642856458301" duration="3982000" />
+      <workItem from="1642860533327" duration="6211000" />
+      <workItem from="1642901736377" duration="11527000" />
+      <workItem from="1642950679746" duration="8291000" />
+      <workItem from="1643008474622" duration="152000" />
+      <workItem from="1643468025312" duration="1168000" />
+      <workItem from="1643531215172" duration="66000" />
+      <workItem from="1643539081006" duration="1395000" />
+      <workItem from="1643595036211" duration="11000" />
+      <workItem from="1643603028062" duration="9339000" />
+      <workItem from="1643717128132" duration="2766000" />
+      <workItem from="1644117487062" duration="2166000" />
+      <workItem from="1646100990552" duration="8556000" />
+      <workItem from="1646360982872" duration="1185000" />
+      <workItem from="1646651524618" duration="6827000" />
+      <workItem from="1646750864037" duration="1986000" />
+      <workItem from="1647000261743" duration="72000" />
+      <workItem from="1647000398877" duration="45000" />
+      <workItem from="1647432840052" duration="646000" />
+      <workItem from="1649595665684" duration="6850000" />
+      <workItem from="1651673096205" duration="333000" />
+      <workItem from="1651712386876" duration="579000" />
+      <workItem from="1651758850542" duration="4793000" />
+      <workItem from="1651798196444" duration="76000" />
+      <workItem from="1652445876156" duration="9015000" />
+      <workItem from="1652940117742" duration="189000" />
+      <workItem from="1653100633740" duration="2682000" />
+      <workItem from="1653224934367" duration="437000" />
+      <workItem from="1653225789001" duration="5999000" />
+      <workItem from="1653231832802" duration="740000" />
+      <workItem from="1653270487958" duration="234000" />
+      <workItem from="1653401198953" duration="4078000" />
+      <workItem from="1653441235623" duration="29000" />
+      <workItem from="1654484539101" duration="2520000" />
+      <workItem from="1654825024735" duration="6870000" />
+      <workItem from="1654956662683" duration="1011000" />
+      <workItem from="1654997563884" duration="267000" />
+      <workItem from="1655212796680" duration="3175000" />
+      <workItem from="1655257850557" duration="595000" />
+      <workItem from="1655645244652" duration="814000" />
+      <workItem from="1655649056313" duration="5593000" />
+      <workItem from="1655687835215" duration="8311000" />
+      <workItem from="1655769845141" duration="61000" />
+      <workItem from="1659329178170" duration="2414000" />
+      <workItem from="1659335062772" duration="3608000" />
+      <workItem from="1659513090586" duration="66000" />
+      <workItem from="1659534679580" duration="3800000" />
+      <workItem from="1659579934526" duration="3192000" />
+    </task>
+    <task id="LOCAL-00001" summary="Tisox初始版本：第一次提交">
+      <created>1638692036124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638692036124</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tisox初始版本：第二次提交&#10;- 修复留言板不能留言的问题&#10;- 其他已知bug修复">
+      <created>1639141112664</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639141112665</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Tisox版本：第三次提交&#10;- 新增白天、黑夜模式切换&#10;- 新增文章分享功能&#10;- 新增背景动效&#10;- 调整了一些功能模块【添加or删除】&#10;- 其他细节优化。">
+      <created>1642951327516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642951327516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="固定版本">
+      <created>1653225149468</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653225149468</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v1.1.0：&#10;后台管理新增已发布文章的撤回/发布功能">
+      <created>1653231932907</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653231932907</updated>
+    </task>
+    <task id="LOCAL-00006" summary="v1.1.1：&#10;-其他">
+      <created>1659585369080</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659585369080</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tisox初始版本：第一次提交" />
+    <MESSAGE value="Tisox初始版本：第二次提交&#10;- 修复留言板不能留言的问题&#10;- 其他已知bug修复" />
+    <MESSAGE value="Tisox版本：第三次提交&#10;- 新增白天、黑夜模式切换&#10;- 新增文章分享功能&#10;- 新增背景动效&#10;- 调整了一些功能模块【添加or删除】&#10;- 其他细节优化。" />
+    <MESSAGE value="固定版本" />
+    <MESSAGE value="v1.1.0：&#10;后台管理新增已发布文章的撤回/发布功能" />
+    <MESSAGE value="v1.1.1：&#10;-终止版本，暂不再维护。" />
+    <MESSAGE value="v1.1.1：&#10;-其他" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.1.1：&#10;-其他" />
+  </component>
+</project>
