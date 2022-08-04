@@ -51,7 +51,7 @@
 - 安装mysql5.7
 - 打包部署
 - nginx反向代理
-- https加密协议
+- https加密访问
 - ....
 > 教程地址：
 [SpringBoot博客部署](https://www.waer.ltd/articles/2022/08/04/1659587541384.html)
