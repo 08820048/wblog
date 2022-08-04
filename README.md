@@ -1,7 +1,9 @@
 # 项目说明
 基于开源版本的二次开发的个人博客。
-关于原生项目详情见：
+- 项目开源自,转载请遵守相关约定：
 [myblog-mybatis](https://github.com/oneStarLR/myblog-mybatis)
+- 我的新站点:
+[八尺妖剑の博客](https://www.waer.ltd/)
 > 后台管理页
 
 ![](https://images.waer.ltd/img/20220804123803.png)
