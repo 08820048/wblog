@@ -3,13 +3,7 @@ package com.waer.wblog.util;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
- * @Description: MD5加密工具类
- * @Author: ONESTAR
- * @Date: Created in 10:34 2020/3/27
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+
 public class MD5Utils {
 
     /**

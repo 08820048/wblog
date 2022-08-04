@@ -5,13 +5,7 @@ import com.waer.wblog.queryvo.*;
 
 import java.util.List;
 
-/**
- * @Description: 博客列表业务层接口
- * @Author: ONESTAR
- * @Date: Created in 23:31 2020/3/30
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+
 public interface BlogService {
 
     ShowBlog getBlogById(Long id);

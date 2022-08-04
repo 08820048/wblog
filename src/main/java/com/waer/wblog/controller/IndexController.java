@@ -29,13 +29,7 @@ import java.util.List;
 import java.util.Objects;
 
 
-/**
- * @Description: 首页控制器
- * @Author: ONESTAR
- * @Date: Created in 13:59 2020/3/25
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+
 @Controller
 public class IndexController {
     public static final String KEY = "4ee21d2553bef8ce2ea87f2a174e36d0";

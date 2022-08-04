@@ -1,9 +1,6 @@
 package com.waer.wblog;
 
 import com.waer.wblog.entity.Blog;
-import com.waer.wblog.entity.Comment;
-import com.waer.wblog.entity.Message;
-import com.waer.wblog.util.MailClient;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

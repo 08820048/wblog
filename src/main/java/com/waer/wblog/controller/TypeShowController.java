@@ -14,13 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-/**
- * @Description: 分类页面显示控制器
- * @Date: Created in 19:57 2020/4/15
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+
 @Controller
 public class TypeShowController {
 

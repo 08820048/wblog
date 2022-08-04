@@ -10,13 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @Description: 拦截异常处理
- * @Author: ONESTAR
- * @Date: Created in 15:48 2020/3/25
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
+
 //拦截有Controller注解的控制器
 @ControllerAdvice
 public class ControllerExceptionHandler {
