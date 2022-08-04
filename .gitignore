@@ -1,8 +1,8 @@
 HELP.md
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+.mvn/wrapper/maven-wrapper.jar
+**/src/main/**/target/
+**/src/test/**/target/
 mvnw.cmd
 mvnw
 .mvn
@@ -29,8 +29,8 @@ mvnw
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+**/src/main/**/build/
+**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
