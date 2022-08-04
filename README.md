@@ -2,6 +2,21 @@
 基于开源版本的二次开发的个人博客。
 关于原生项目详情见：
 [myblog-mybatis](https://github.com/oneStarLR/myblog-mybatis)
+> 后台管理页
+
+![](https://images.waer.ltd/img/20220804123803.png)
+> 首页
+
+![](https://images.waer.ltd/img/20220804124032.png)
+> 时间轴
+
+![](https://images.waer.ltd/img/20220804124118.png)
+> 其他功能(临时站点)
+
+[在线体验](http://47.96.137.55:8080/)
+
+
+
 # 技术栈
 ## 前端
 - JS框架：JQuery
