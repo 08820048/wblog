@@ -71,6 +71,8 @@
 
 ![](https://images.waer.ltd/img/20220804123803.png)
 
+![](https://images.waer.ltd/img/20220805135242.png)
+
 > 在线地址:https://www.ilikexff.xyz
 
 ## 项目部署
