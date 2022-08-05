@@ -13,7 +13,8 @@ spring:
     username: workcoder@sina.com
     password: d6dd27b52588150a
     default-encoding: utf-8
-
+server:
+  port: 8080
 comment.avatar: /images/avatar.png
 message.avatar: /images/avatar.png
 

@@ -11,13 +11,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;
 
-/**
- * @Description: 日志切面处理
- * @Author: ONESTAR
- * @Date: Created in 16:18 2020/3/25
- * @QQ: 316392836
- * @URL: http://122.51.28.187:8080/
- */
+
 @Aspect
 @Component
 public class LogAspect {

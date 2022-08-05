@@ -7,11 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * @Description: 照片墙持久层接口
- * @Date: Created in 23:32 2020/4/16
- * @Author: WAer
- */
+
 @Mapper
 @Repository
 public interface PictureDao {

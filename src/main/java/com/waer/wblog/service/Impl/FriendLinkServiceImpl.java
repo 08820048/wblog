@@ -7,13 +7,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-/**
- * @Description: 友链业务层接口实现类
- * @Date: Created in 14:22 2020/4/16
- * @Author: ONESTAR
- * @QQ群: 530311074
- * @URL: https://onestar.newstar.net.cn/
- */
 @Service
 public class FriendLinkServiceImpl implements FriendLinkService {
 

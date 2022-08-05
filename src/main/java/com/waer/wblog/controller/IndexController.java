@@ -2,7 +2,6 @@ package com.waer.wblog.controller;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.waer.wblog.annoation.topwd;
 import com.waer.wblog.dao.BlogDao;
 import com.waer.wblog.entity.Blog;
 import com.waer.wblog.entity.Comment;
@@ -81,7 +80,6 @@ public class IndexController {
 
 //    跳转博客详情页面
     @GetMapping("/blog/{id}")
-    @topwd
     public String blog(@PathVariable Long id, Model model) {
         DetailedBlog detailedBlog = blogService.getDetailedBlog(id);
         List<Comment> comments = commentService.listCommentByBlogId(id);
@@ -140,26 +138,5 @@ public class IndexController {
         return "index";
     }
 
-    @GetMapping("/topwd")
-    public String topwd(){
-        return "topwd";
-    }
 
-    /**
-     * 验证私密文章密码
-     * @param id
-     * @param pwd
-     * @param model
-     * @return
-     */
-    @PostMapping("/pwd/{id}")
-    public String pwd(@PathVariable Long id, @RequestParam String pwd,Model model){
-        Blog blog = blogService.selectTopwdById(id);
-        if(pwd != null) {
-            if(Objects.equals(blog.getTopwd(),pwd)) {
-                return "redirect:/blog/" + id;
-            }
-        }
-        return "topwd";
-    }
 }
