@@ -73,11 +73,11 @@
 
 ![](https://images.waer.ltd/img/20220805135242.png)
 
-> 在线地址:https://www.ilikexff.xyz
+> 在线地址:https://www.ilikexff.xyz(临时地址，随时失效)
 
 ## 项目部署
 
 > 详细部署教程在我的博客有写。
 
 [wblog博客线上部署](https://www.waer.ltd/articles/2022/08/04/1659587541384.html)
-访问密码：0000
+访问密码(如果有的话)：0000
